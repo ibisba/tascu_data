@@ -1,0 +1,407 @@
+id,parent_id,position,step_name,step_desc,organism,sop_url,duration_in_days,part_of_service,comments,success_rate,created,last_modified
+1,0,1,* Select host and product,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+2,1,1,** Obtain relevant data for product,NULL,NULL,NULL,NULL,NULL,J-L: QSAR (prediction of properties from structure).,NULL,2018-11-14T14:13:12Z,NULL
+3,2,1,"*** Obtain physicochemical data (Toxicity, Solubility, InChI,…) for product",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+4,2,2,*** Estimate product toxicity for chassis,NA,NULL,NA,NULL,NULL,"@Jean-Loup has a tool for toxicity estimation, training data available only for E. coli. For WP7, it is also important to know where the toxicity database is, what kind of access rights etc.",NULL,2018-11-14T14:13:12Z,NULL
+5,1,2,** Obtain relevant data for host,NULL,NULL,NULL,NULL,NULL,"Comments: In principle, most of the design pipeline needs to have been executed for the selection of a good host for a selected product.",NULL,2018-11-14T14:13:12Z,NULL
+6,5,1,*** Genetic  tools,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+7,5,2,*** Genome sequence,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+8,5,3,*** Genome-scale metabolic model (GEM),NULL,NULL,NULL,NULL,NULL,Strain specific GEMs may be needed for some organisms,NULL,2018-11-14T14:13:12Z,NULL
+9,5,4,"*** Collect relevant available (bibliographic, experimental) data (candidate ‘sink’ metabolites)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+10,5,5,*** Physiological constraints,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+11,10,1,**** Oxygen requirements,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+12,10,2,**** Raw material requirements,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+13,10,3,**** Estimate product toxicity for chassis,NA,NULL,NA,NULL,NULL,"@Jean-Loup has a tool for toxicity estimation, training data available only for E. coli",NULL,2018-11-14T14:13:12Z,NULL
+14,5,6,*** Process constraints,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+15,1,3,** Technoeconomic constraints,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+16,15,1,*** Estimate market value of product,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+17,15,2,*** Intellectual Property (IP) constraints,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+18,15,3,*** DSP considerations,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+19,1,4,"** Chassis, substrate, pathway, and product selection",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+20,19,1,"*** Estimate economic feasibility (depends on substrate, pathway, and product)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+21,19,2,"*** Selection of chassis, substrate, pathway, and product",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+22,0,2,* Design,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+23,22,1,"** Receive input from ""select host and products"" step",NA,NULL,NA,NULL,NULL,"Check that the prerequisites for Computational Strain Design are fulfilled, i.e. the input includes a SBML for the host, the SBML contains a biomass/growth objective, and that the product is specified with sufficient detail (stereochemistry, chain length, etc).",NULL,2018-11-14T14:13:12Z,NULL
+331,23,1,*** Receive name of production host,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T11:52:18Z,2019-01-23 09:52:14
+332,23,2,*** Obtain SBML models for production hosts,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T11:52:54Z,2019-01-23 09:53:06
+333,23,3,*** Obtain annotated genomes of production hosts,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T11:53:42Z,2019-01-23 09:53:32
+334,23,4,*** Receive name of product,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T11:54:11Z,NULL
+24,22,2,** Receive input from #Upscale #Test-HighThroughput #Test-Bioreactor and #build,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+25,24,1,*** Physiological constraints,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+26,25,1,"**** Oxygen requirements, pH, solvent, carbon source, substrate and product toxicity, product related energetics, light, temperature",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+27,24,2,*** Process constraints.,NULL,NULL,NULL,NULL,NULL,(TODO write the steps @NTUA),NULL,2018-11-14T14:13:12Z,NULL
+28,27,1,"**** Pressure, ...",NA,NULL,NA,NULL,NULL,"Product separation requirements; e.g. low pH, minimum titer, unwanted side products that significantly increase the separation cost, etc.",NULL,2018-11-14T14:13:12Z,NULL
+29,22,4,** Execution of Design,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-03-22 11:35:33
+30,29,1,*** Design production strain,NA,NULL,NA,NULL,NULL,We might need to rethink this 'Design the chassis' step. Right now it is a bit chaotic and some of the steps inside it are copies of steps mentioned elsewhere. This step can be divided in two parts: 1) deletion of genes; 2) addition of genes. Both parts will contain mandatory genes and genes that could be beneficial (we need some sort of filter or quality check to distinguish between them) . These two types of genes need different follow-up steps. Who is responsible for this step? Maybe they could take a look at it?,NULL,2018-11-14T14:13:12Z,NULL
+300,30,1,**** Information search,Read literature on known production pathways and search for data in databases.,NULL,NA,NULL,NULL,"Read literature on known production pathways.
+-Which reactions are problematic?
+-What hurdles have they encountered (and how was it solved)?
+-Compound toxicity?
+-Enzyme promisquity?
+Databases
+-KEGG: pathways, reactions, cofactors, promisquity, known ko/genes, in which organisms are enzymes for those reactions known?
+-MetaCyc: pathways, reactions, cofactors, promisquity, known/predicted organisms, deltaG?
+-BRENDA: known substrates, organisms, activators, inhibitors, binding constants, pH optimum, pH tolerance, rate information, mutations",NULL,2018-11-14T14:13:12Z,NULL
+326,300,1,***** Freedom to operate (IPR considerations),NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+327,300,2,***** Known pathways in literature,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2018-11-16 08:17:04
+330,300,3,***** Known pathways in reaction databases,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-16T08:17:44Z,2018-11-16 08:19:26
+328,300,4,***** Patent search,Search patent literature for similar pathways and individual modifications.,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2018-11-16 08:19:26
+31,30,2,**** Computational metabolic design,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+32,31,1,***** Computational product pathway design,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+33,32,1,"****** Enumerate pathway options (Retropath,…)",NA,NULL,NA,NULL,NULL,"Convert RetroPath output to complete reactions. Check MetaNetX reactions for correctness and electron balancing. For every unknown cofactor, propose plausible cofactors for the chassis considered.",NULL,2018-11-14T14:13:12Z,NULL
+34,33,1,******* Screen pathway options based on quality criteria,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+321,32,2,****** Convert reaction rules to complete reactions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+322,32,3,****** Refine pathways,NA,NULL,NA,NULL,NULL,E.g. define cofactors where cofactors are unknown.,NULL,2018-11-14T14:13:12Z,NULL
+35,32,4,****** Score pathways without chassis,NA,NULL,NA,NULL,NULL,"Score pathways. Estimate e.g. membrane toxicity of pathway intermediates. Estimate thermodynamic feasibility of reactions in pathway. If necessary, use OBE to find distributed bottlenecks.",NULL,2018-11-14T14:13:12Z,NULL
+39,35,1,******* Membrane toxicity of intermediates,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+38,35,2,******* Thermodynamic feasibility verification,NA,NULL,NA,NULL,NULL,Use eQuilibrator if no other tool available for pH-dependent thermodynamics.,NULL,2018-11-14T14:13:12Z,NULL
+323,35,3,******* Optimized Bottleneck Energetics,NA,NULL,NA,NULL,NULL,Optional,NULL,2018-11-14T14:13:12Z,NULL
+40,31,2,***** Chassis embedment,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+41,40,1,****** Receive input from product pathway design,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+42,40,2,****** Map metabolites between pathway and chassis,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+36,40,3,****** Add production pathway to chassis SBML in silico,NA,NULL,NA,NULL,NULL,"Add pathway to SBML for chassis. Match pathway metabolites to chassis metabolites. Verify matches by structural comparison. Also check stereochemistry. Prefer starting pathways from cytosolic metabolites. If pathway generates side products, i.e. compounds that aren't chassis metabolites, find the reactions that connects them to the metabolic network of the chassis.",NULL,2018-11-14T14:13:12Z,NULL
+316,40,4,****** Fill metabolic gaps,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+37,40,5,****** Screen potential substrates in silico,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+44,40,6,****** Screen growth conditions,NA,NULL,NA,NULL,NULL,"Anaerobic, aerobic, peroxisome active/inactive, etc.",NULL,2018-11-14T14:13:12Z,NULL
+45,40,7,"****** Growth-product coupling. (e.g. OptKnock, RobustKnock, Minimal Cut Sets)",NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+49,40,8,****** Calculate expected yields,NA,NULL,NA,NULL,NULL,"Check that oxygen consumption is reasonable.
+VTT has a SOP",NULL,2018-11-14T14:13:12Z,NULL
+317,40,9,****** Estimate productivities,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+324,31,3,***** Evaluate and choose pathways,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+52,30,3,**** Genetic design for chassis,NA,NULL,NA,NULL,NULL,The remaining tasks relating to enzyme design could be moved to enzyme design.,NULL,2018-11-14T14:13:12Z,NULL
+43,52,1,***** Check for native enzymes with activity for heterologous metabolites,NA,NULL,NA,NULL,NULL,"(e.g. genome re-annotation, literature search. Find the enzymes of the metabolites from the reference databases, and look in the genome whether homologous enzymes exist natively).",NULL,2018-11-14T14:13:12Z,NULL
+72,43,1,****** Genome reannotation,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+46,43,2,****** Search for native homologues of enzymes acting on the heterologous metabolites,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+50,52,2,***** Additional trait design,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+47,50,1,****** Propose desirable traits,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+51,50,2,****** Bioprospecting for traits,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+48,52,3,"***** Pathway improvement by mutations, supporting/auxiliary pathways, enzymes/cofactor specificity, genetic modifications",NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+71,52,4,***** Select promoter types,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+54,52,5,***** Evaluate and choose strains,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+325,52,6,***** Describe genetic constructs in SBOL format,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+74,30,4,**** Store the list of enzyme functions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+318,30,5,**** Store the list of gene deletions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+319,30,6,**** Store the list of genotypes,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+320,30,7,**** Store the list of promoter types,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+73,29,2,*** Select and/or design enzyme,NA,NULL,NA,NULL,NULL,"This should serve also enzyme screening and protein production; should be expanded if these other applications are relevant.
+#EnzymeDesign.",NULL,2018-11-14T14:13:12Z,NULL
+75,73,1,**** TODO write the steps @INRA,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+307,73,2,**** Retrieve the list of enzyme functions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+56,73,3,**** Generate candidate sequences (Enzyme search),NA,NULL,NA,NULL,NULL,#RoundRobinNeeded but comparison difficult,NULL,2018-11-14T14:13:12Z,NULL
+58,73,4,**** Function-based in silico screening of candidate sequences,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+55,73,5,**** Choose enzyme sequences,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+57,73,6,**** Optimize gene sequences,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+59,73,7,**** Remove mobile regulatory elements,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+60,73,8,**** Send list of gene additions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+301,29,3,*** Design DNA constructs for expression host,NA,NULL,NA,NULL,NULL,"Applies equally to production strains, enzyme screening hosts, and protein production hosts.",NULL,2018-11-14T14:13:12Z,NULL
+53,301,1,**** Freedom to operate with regards to the tools #IPRConsiderations,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+308,301,2,**** Retrieve the list of gene deletions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+309,301,3,**** Retrieve the list of gene additions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+310,301,4,**** Retrieve the list of promoter types,NA,NULL,NA,NULL,NULL,All cargo defined earlier based on modeling desired phenotype.,NULL,2018-11-14T14:13:12Z,NULL
+311,301,5,**** Select promoters,NA,NULL,NA,NULL,NULL,May be combinatorial.,NULL,2018-11-14T14:13:12Z,NULL
+312,301,6,**** Select integration sites/loci,NA,NULL,NA,NULL,NULL,May be combinatorial.,NULL,2018-11-14T14:13:12Z,NULL
+61,301,7,**** Select genome editing strategy,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+62,61,1,***** CRISPR/Cas9 #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+63,61,2,***** MAGE: genome engineering #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+313,301,8,**** Select vectors/plasmids/DNA constructs,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+64,301,9,**** Select vector assembly strategy,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+65,64,1,"***** SEVA/METABRICK, Moclo, Gibson pathway engineering @Wageningen",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+66,65,1,****** #TODO add the list of tasks needed #ToBeReviewed,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+67,64,2,"***** Vector, promoter selection, plasmids, locus of integration, restriction sites, etc (cloning strategy) #SopNeeded",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+68,64,3,***** Combinatorial assembly strategy #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+314,301,10,**** List DNA fragments to order,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+69,301,11,**** Describe genetic constructs in SBOL format,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+70,69,1,***** Deposit to a database that we are to create #ToBeReviewed,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+315,301,12,**** Send strain designs to Build,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+302,29,4,*** Design growth medium and cultivation conditions,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+304,302,1,**** Receive list of genotypes,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+303,302,2,**** Design experiments to test phenotype,NA,NULL,NA,NULL,NULL,The Build task will make sure the genotype is correct.,NULL,2018-11-14T14:13:12Z,NULL
+305,302,3,**** Send list of growth media and cultivation conditions to Test,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+306,302,4,**** Send predicted clone behavior to Test,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+76,22,5,** Criteria for successful outcome of #Design (Criteria to be available as check list table),NA,NULL,NA,NULL,NULL,"This could be a ""SOP""",NULL,2018-11-14T14:13:12Z,2019-03-22 11:35:33
+77,76,1,*** Calculation of theoretical yields/productivities carried out,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+78,76,2,"*** Consideration to the specificity of the process (for the product) (selectivity, side products)",NULL,NULL,NULL,NULL,NULL,"""We need to use optimization tools that can provide a trade-off",NULL,2018-11-14T14:13:12Z,NULL
+79,76,3,*** Design suits the chassis (and its genotype),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+80,76,4,*** Design expected to be stable in vivo,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+81,76,5,*** Build designs made #Output,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+82,76,6,*** Test conditions designed,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+83,76,7,*** Upscale conditions considered #UpscaleConsideration,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+84,76,8,*** Test conditions considered and predicted strain behavior expected to be measureable in #Test-HighThroughput conditions,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+85,76,9,*** Predicted effect of modifications on flux ratios expected to be measurable in Test conditions (e.g. product and/or precursor).,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+86,76,10,*** Appropriate MTAs and other agreements in place,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+87,22,6,** Output to Build,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-03-22 11:35:33
+88,0,3,* Build,NA,NULL,NA,NULL,NULL,#StandardsNeeded for cloning strategies etc,NULL,2018-11-14T14:13:12Z,NULL
+89,88,1,** Receive input from Design: strain and vector designs,NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-06-05 22:08:55
+335,89,1,*** Receive high-level step-by-step instructions for construction of DNA constructs,"(e.g. plasmid pDGJ537, restriction enzyme reDGJ, oligo dsyt985v85vnts --> pDSYT985)",NULL,NA,NULL,NULL,NA,NULL,2019-01-16T13:17:31Z,2019-03-22 15:22:40
+336,89,2,*** Receive plasmid maps in SBOL format,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T13:18:09Z,NULL
+337,89,3,*** Receive list of oligos in FASTA format to be ordered for DNA fragment constrution,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T13:18:26Z,2019-03-22 15:22:17
+338,89,4,*** Receive high-level step-by-step instructions for strain construction,"(e.g. strain CEN.PK,  plasmid pDSYT985, restriction enzyme reDUS, oligos 2g9fh5, n953f7, and 95gn, yeast recombination)",NULL,NA,NULL,NULL,NA,NULL,2019-01-16T13:18:51Z,2019-03-22 15:23:08
+339,89,5,*** Receive list of primers in FASTA format for verification and the SOP of the verification method,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T13:19:06Z,2019-03-22 15:23:41
+90,88,2,** Receive #Input from #Test-HighThroughput #Test-Bioreactor #Upscale,NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-06-05 22:09:15
+91,88,3,** Execution of Build,NA,NULL,NA,NULL,NULL,"This step could benefit from a few additional steps that deal with knock-outs specifically. At the moment most steps describe the knock-in process (integration and insertion).
+ #SopNeeded #RoundRobinNeeded",NULL,2018-11-14T14:13:12Z,NULL
+95,91,1,*** Creation of DNA constructs,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-04-01 11:15:53
+92,95,1,**** Order/synthesize genetic material,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+93,92,1,***** Receive genetic material,NULL,NULL,NULL,NULL,NULL,#SopNeeded for genetic storage,NULL,2018-11-14T14:13:12Z,NULL
+381,93,1,****** Prepare genetic material for transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-15T10:01:50Z,NULL
+383,93,2,****** Prepare liquid cultivation medium for transformation,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:05:04Z,2019-06-14 13:08:05
+387,93,3,****** Prepare solid cultivation medium for transformation,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:45:31Z,2019-06-14 13:09:22
+384,93,4,****** Prepare cultivation media for making glycerol stocks,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:06:05Z,2019-06-14 13:09:22
+385,93,5,****** Transform genetic material into cloning host organism,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:07:01Z,2019-06-14 13:08:05
+386,93,6,****** Make glycerol stock,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:09:14Z,2019-06-14 13:08:05
+94,92,2,***** Verify genetic material by DNA sequence,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+96,95,2,**** Withdraw genetic material from storage,NA,Escherichia coli,https://hub.ibisba.eu/sops/59?version=1,NULL,NA,#SopNeeded for withdrawal,NULL,2018-11-14T14:13:12Z,2019-06-20 11:22:13
+98,95,3,**** Assembly of DNA parts,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+349,98,1,***** In vitro assembly of the DNA construct,NA,NULL,https://drive.google.com/open?id=1zPZF2czFpIIf8-Z2ntBj1nXWQtfg6FgY,NULL,NULL,NA,NULL,2019-03-25T08:50:54Z,2019-03-28 15:17:24
+350,98,2,***** Transformation of the DNA construct into the cloning host organism,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:51:34Z,NULL
+366,350,2,****** Prepare cultivation media for transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:44:52Z,NULL
+367,350,3,****** Prepare cultivation media after colony picking,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:45:25Z,NULL
+369,350,4,****** Transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:46:56Z,2019-04-10 07:47:28
+356,350,5,****** Colony picking for verification of DNA constructs,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-01T11:30:40Z,2019-04-10 07:47:28
+368,350,3,****** Withdraw cloning host organism from storage,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:46:27Z,2019-04-10 07:47:28
+99,95,4,**** Verification of DNA constructs,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+363,99,4,***** Prepare primers for verification of the DNA construct,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:37:15Z,NULL
+364,99,5,***** Prepare template DNA for verification of the DNA construct,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:37:42Z,NULL
+365,99,6,***** Recombinant clone screening,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:41:13Z,NULL
+345,95,6,**** Storage of the DNA construct,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:33:03Z,NULL
+346,345,1,***** Cryostock preparation for the cloning host carrying the DNA construct,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:36:20Z,NULL
+347,346,1,****** Make glycerol stock #SopNeeded,NA,NULL,https://drive.google.com/open?id=1y80SYGUnF9VDrgF09_izEyBXnyFljOuAI7SUn1FV1Is,NULL,NULL,NA,NULL,2019-03-25T08:48:21Z,2019-03-28 11:09:00
+348,346,2,****** Add label/barcode #SopNeeded,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:48:35Z,2019-03-25 08:49:12
+351,91,2,*** Creation of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-01T11:07:37Z,2019-04-01 11:15:53
+361,351,1,**** In vitro assembly of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-03T14:13:36Z,2019-04-03 14:15:16
+362,351,2,**** Transformation of the integration/expression vector into the cloning host organism,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-03T14:14:20Z,2019-04-03 14:15:16
+370,362,1,***** Prepare cultivation media for transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:50:29Z,NULL
+371,362,2,***** Prepare cultivation media after colony picking,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:50:45Z,NULL
+372,362,3,***** Withdraw cloning host organism from storage,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:51:23Z,NULL
+373,362,4,***** Transformation into the cloning host organism,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:51:57Z,NULL
+374,362,5,***** Colony picking for verification of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:52:23Z,NULL
+343,351,3,**** Verify DNA sequence of the construct,Verification by sequencing of the assembled DNA construct,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T07:49:00Z,2019-04-03 14:15:16
+375,343,1,***** Prepare primers for verification of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:54:22Z,NULL
+376,343,2,***** Prepare template DNA for verification of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:54:42Z,NULL
+377,343,3,***** Recombinant clone screening,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:55:33Z,NULL
+378,351,4,**** Storage of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:57:59Z,NULL
+380,378,1,***** Cryostock preparation for the cloning host carrying the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:58:55Z,2019-04-10 07:59:18
+379,380,1,****** Make glycerol stock,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:58:22Z,2019-04-10 07:59:18
+100,91,3,*** Transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-04-01 11:15:53
+101,100,1,**** Non-HT transformation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+102,101,1,***** Prepare cultivation media for transformation step,NULL,NULL,NULL,NULL,NULL,#SopNeeded for preparing solid culture media,NULL,2018-11-14T14:13:12Z,NULL
+103,101,2,***** Prepare cultivation media for cultivation after colony picking,NULL,NULL,NULL,NULL,NULL,#SopNeeded for preparing liquid culture media,NULL,2018-11-14T14:13:12Z,NULL
+104,101,3,***** Withdraw background strain from storage,NULL,NULL,NULL,NULL,NULL,#SopNeeded for withdrawal of strains,NULL,2018-11-14T14:13:12Z,NULL
+105,101,4,***** Prepare genetic material for transformation,NA,NULL,https://drive.google.com/open?id=1SwFf5E5D0nY5IGD8epUa7Vkc-9x1z3Oe,NULL,NULL,#SopNeeded for use of restriction enzymes,NULL,2018-11-14T14:13:12Z,2019-03-28 14:24:26
+106,101,5,***** Transformation #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+107,101,6,***** Colony picking,NULL,NULL,NULL,NULL,NULL,#CriteriaNeeded,NULL,2018-11-14T14:13:12Z,NULL
+108,100,2,**** HT- transformation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+109,108,1,***** Preparation and distribution of transformation medium  in µplates format,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+110,108,2,***** Preparation and distribution of recovery medium in µplates format,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+111,108,3,***** Cell preparation from stock solution,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+112,108,4,***** Select transformation conditions,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+113,108,5,***** incubation of cells in recovery medium,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+114,108,6,***** Automated HT spreadind using colony picker with compartementalized Qtrays,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+115,108,7,***** Automated recovery of transformant and distribution in appropriate format,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+116,91,4,*** Verification of the transformants,NA,NULL,NA,NULL,NULL,#SopNeeded,NULL,2018-11-14T14:13:12Z,2019-04-01 11:11:28
+117,116,1,**** Prepare primers for verification sequencing,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+118,116,2,**** Quantify integration count,NA,NULL,NA,NULL,NULL,(CRISPR/Cas9 tends to produce more than one),NULL,2018-11-14T14:13:12Z,NULL
+119,116,3,**** Verify integration loci,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+120,116,4,**** Verify insertion completeness,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+121,116,5,**** Check how many independent clones are needed,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+122,116,6,**** Recombinant clone screening and selection (depends on transformation implementation) #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+123,91,5,*** Storage of clones,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-04-01 11:11:28
+124,123,1,**** Cryostock preparation (triplicates needed),NULL,NULL,NULL,NULL,NULL,#SopNeeded for cryostock preparation and labeling/barcoding,NULL,2018-11-14T14:13:12Z,NULL
+125,124,1,***** Make glycerol stock #SopNeeded,NA,NULL,https://drive.google.com/open?id=1pK3pXq2jPZ2fWxcDbK1wWvWpG6NWo7La,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-03-28 11:07:14
+126,124,2,***** Add label/barcode #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+127,88,4,** Criteria for successful execution of Build  (Criteria to be available as check list table),NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-06-05 22:09:30
+128,127,1,*** Correct parts assembly.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+129,127,2,*** No ”off-target” clones.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+130,127,3,*** Sufficient and balanced genetic variation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+131,88,5,"** Output to Test (also to Design, Learn and Upscale)",NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-06-05 22:09:39
+132,0,4,* Test,"Test phase of the DBTL cycle involves testing of the strains constructed in the Build phase
+
+Define the wanted outcome. Definition of the outcome for the Test phase determines the choice of culture conditions and scale. If rich data is required, testing of the strains should be done in bioreactors. Otherwise, microtiter or shake flask cultivations can be used instead
+
+Check which products are produced and review the literature for their localization in the cell and what are their physiological and physicochemical properties. Depending on these variables, select appropriate process type and analytical procedures that will produce the data defined in the wanted outcome.
+
+Define DSP strategy based on the localization and physicochemical properties of the product.
+
+Draft a list all participating organizations offering services used in testing the strains.",NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-06-05 21:59:51
+388,132,1,** Define test conditions,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T06:46:54Z,2019-05-24 10:41:22
+389,388,1,*** Define fermentation conditions,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T12:30:10Z,2019-05-24 10:41:37
+390,388,2,*** Define fermentation media compositions,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T12:30:49Z,2019-05-24 10:41:48
+391,388,3,*** Define assay conditions for enzymatic activity analyses,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T12:34:39Z,2019-05-24 10:42:06
+133,132,2,** Receive #inputs from Build,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 12:27:46
+358,133,1,*** Receive colonies to be tested for the presence of correct DNA construct,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-01T11:32:06Z,2019-04-01 11:32:29
+354,133,2,*** Receive colonies to be tested for the presence of correct integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-01T11:27:18Z,2019-04-01 11:32:29
+355,133,3,*** Receive colonies to be tested for the correct strain construction,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-01T11:27:51Z,2019-04-01 11:32:29
+340,133,4,*** Receive clones to be tested as frozen glycerol stocks,NA,NULL,NA,NULL,NULL,NA,NULL,2019-01-16T13:21:03Z,2019-04-01 11:32:29
+134,132,3,** Receive #inputs from the #Upscale #UpscaleConsideration,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 12:27:46
+135,132,4,** Execution,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 12:27:46
+136,135,4,*** Execution of Test-High throughput,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-04-01 11:33:18
+137,136,1,**** Design (cultivation) Culture design,NA,NULL,NA,NULL,NULL,"This step can be deleted, as it is a copy of the step below.",NULL,2018-11-14T14:13:12Z,NULL
+138,137,1,"***** Define culture conditions and regimes (volumes, kLa,…)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+139,137,2,"***** Define data to collect/analysis to perform. reaction kinetics data, reaction (growth expression identification)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+140,137,3,***** Output cultivation designs to Upscale #DataFormatNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+141,137,4,***** Output predicted clone behavior to Learn #DataFormatNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+142,136,2,**** Design test conditions and cultivations,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+143,142,1,"***** Define culture conditions and regimes (HTS, Bench Scale Bioreactor test).",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+144,142,2,***** Define data to collect/analysis to perform.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+145,142,3,***** Describe test designs #DataFormatNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+146,142,4,***** Transmission of predicted clone behavior to T6.4 #DataFormatNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+147,136,3,**** Preparation of clones for testing,NULL,NULL,NULL,NULL,NULL,This could also be part of #build,NULL,2018-11-14T14:13:12Z,NULL
+148,147,1,***** Removal of unnecessary vectors and cas9,NA,NULL,NA,NULL,NULL,Seems to me that this was already done by the Build team!,NULL,2018-11-14T14:13:12Z,NULL
+149,136,4,**** Inoculum preparation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+150,149,1,***** Strains from Build received,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+151,149,2,***** Strain revitalization,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+152,149,3,***** Cryostocks generation and storage.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+153,136,5,**** Test (HTS) HT screening in microtiter format (microtiter plate),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+154,153,1,***** Prepare culture media,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+155,153,2,***** Withdraw clones from storage,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+156,153,3,***** Cell solutions dispended in appropriate medium (automatically or via robotic script),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+157,153,4,***** Set up incubation parameters (T°/Stirring rate/measurment rate/wavelenght),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+158,153,5,***** Incubation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+159,153,6,***** Realisation of kinetics or end point experiments,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+160,159,1,****** pH,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+161,159,2,"****** Exometabolites, untargeted",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+162,159,3,"****** Exometabolites, targeted",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+163,159,4,****** Lipidomics,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+164,159,5,****** HPLC -MS/MS (The second MS is mostly for identification),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+165,136,6,**** HT screening solid state,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+166,165,1,***** Set up of a phenotypic screens,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+167,165,2,***** Sterile medium plate & µplate preparation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+168,165,3,***** Screening experiments (colony picker),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+169,165,4,***** Selection and picking (colony selection and µplate rearraying),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+170,136,7,**** HT screening using flow cytometry,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+171,170,1,***** Without sorting,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+172,171,1,****** Set up of fluorescence/morphology screens,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+173,171,2,****** Sterile medium plate & µplate preparation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+174,171,3,****** µplate culture,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+175,171,4,****** µplate duplication,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+176,171,5,****** cytometer callibration,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+177,171,6,****** Screening experiments (analyser cytometer),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+178,171,7,****** Selection and pipetting of interesting well,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+179,171,8,****** Strain back-up,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+180,170,2,***** With sorting,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+181,180,1,****** Set up of fluorescence/morphology screens,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+182,180,2,****** Sterile medium,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+183,180,3,****** Heterogeneic population culture,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+184,180,4,****** preliminary enrichment population,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+185,180,5,****** Screening experiments (sorter cytometer / clone sorting),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+186,180,6,****** Culture of one cell per well,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+187,180,7,****** Strain back-up,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+188,135,5,*** Execution of Test-Bioreactor #Test-Bioreactor @UAB,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-04-01 11:33:18
+189,188,1,**** Receive #Input from the #Test-HighThroughput,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+190,188,2,**** Chemostat/batch/fedbatch culture for Strain characterization / Bioprocess development,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+191,190,1,***** Bioreactor set-up  (Bench Scale Bioreactor test) (steps according to equipment) #SopNeeded #RoundRobinNeeded,NULL,NULL,NULL,NULL,NULL,#HasSop @UAB,NULL,2018-11-14T14:13:12Z,NULL
+192,191,1,****** Sterilization #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+193,191,2,"****** Probe calibration (pH, DO, T) #SopNeeded",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+194,191,3,"****** Gas sensor calibration (CO2, O2) #SopNeeded",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+195,191,4,****** Pump calibration #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+196,191,5,****** Set-up monitoring and control software,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+197,190,2,***** Feeding and collection tanks and culture media preparation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+198,197,1,****** Culture media preparation #SopNeeded,NA,NULL,NA,NULL,NULL,#SopNeeded because errors can't be traced back #HasSop @UAB @VTT,NULL,2018-11-14T14:13:12Z,NULL
+199,197,2,"****** Bioreactor, feeding and collection tanks preparation and filling #SopNeeded",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+200,197,3,****** Sterilization #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+201,190,3,***** Fermentation run,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+202,201,1,"****** Set culture conditions (T, pH, liquid flow, gas flow) #SopNeeded",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+203,201,2,****** Start of On-line data collection,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+204,201,3,****** Inoculation #SopNeeded,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 13:05:15
+394,201,4,****** Test the presence of microbial contaminants,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T13:04:44Z,2019-05-22 13:05:15
+395,394,1,******* Plate the culture medium on solid agar plates,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T13:06:00Z,NULL
+396,394,2,******* Inspect solid agar plates under a light microscope,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T13:06:29Z,NULL
+205,201,5,"****** Sample collection, storage and management #SopNeeded",NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 13:05:15
+206,201,6,****** 13C Labelling (when necessary) #SopNeeded,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 13:05:15
+207,190,4,***** Post-fermentation tasks,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+208,207,1,****** Bioreactor washing #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+209,207,2,****** Waste treatment #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+210,207,3,****** On-line fermentation data recovery,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+211,188,3,**** Fermentation off-line analysis,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+212,211,1,***** Cell dry weight measurement #SopNeeded #HasSop @UAB @VTT #RoundRobinNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+213,211,2,"***** Cell biomass analysis. (dry weight, biomass elemental and/or macromolecular composition ) #SopNeeded #HasSop @UAB",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+214,211,3,***** Biological/Enzymatic analyses #SopNeeded,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 13:13:02
+397,214,1,****** Quantification of the product using the Bradford assay,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T13:13:59Z,NULL
+398,214,2,****** Characterization of the product with SDS PAGE,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T13:14:19Z,NULL
+399,214,3,****** Enzyme activity assays,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T13:14:37Z,NULL
+215,211,4,***** Flow Cytometry #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+216,211,5,***** Exometabolite analysis (Task) #SopNeeded #HasSop @UAB #RoundRobinNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+217,216,1,"****** Obtain sample(s) (Instruction), Glass vial or µtiter plate expected",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+218,216,2,****** Optional: make dilutions (Instruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+219,216,3,****** Register sample(s) into LIMS (Instruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+220,216,4,****** Put sample(s) to short-term storage (Instruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+221,216,5,****** Prepare run(s) by obtaining reagents etc (Instruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+222,216,6,****** Make derivations if necessary (Intruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+223,216,7,****** Add internal standards where necessary (Instruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+224,216,8,"****** Run sample(s) for targeted metabolomics (Instruction), run duplicates according to quality control plan",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+225,216,9,"****** Quantify (Instruction), typically for targeted metabolomics",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+226,216,10,"****** Run sample(s) for untargeted metabolomics (Instruction), run duplicates according to quality control plan",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+227,216,11,"****** Identify (Instruction), typically for untargeted metabolomics",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+228,216,12,"****** Quality control (check signal within range, dilute and rerun if necessary)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+229,216,13,****** Save results to LIMS (Instruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+230,216,14,****** Reporting (Instruction),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+231,211,6,***** Cellular metabolome analysis (un labelled) #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+232,211,7,***** Cellular metabolome analysis (13C-labelled) #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+233,211,8,***** Transcriptome analysis #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+234,211,9,***** Proteome analysis #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+235,188,4,**** Data processing,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+236,235,1,"***** Fermentation data validation. (mass balances, reconciliation,…) #SopNeeded #RoundRobinNeeded",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+237,235,2,***** Metabolic flux analysis,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+238,235,3,***** Summary of collected data relevant for T6.4 (selection of relevant data) #RoundRobinNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+239,235,4,***** Transmission of summary experimental data to next step (data format specification) #SopNeeded #RoundRobinNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+240,132,5,** Criteria for successful outcome of Test (Criteria to be available as check list table),NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 12:27:46
+241,240,1,*** Criteria for successful outcome Test-High throughput,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+242,241,1,**** Background variation known and excluded; positive and negative references distinguishable. Predicted mutant behaviour expected to be measurable. Conditions are controllable.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+243,241,2,**** Testing (HTS) correlates with Design: Genetic changes are seen in Test conditions (e.g. mRNA level). Reference strains give expected results. Variation between different mutant strains. Testing works in conditions the Design step predicted.  ,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+244,241,3,**** Testing (HTS) predicts Scale-up: Specific productivity and ”carbon balances” measureable. Modification of Test conditions gives a predicted outcome. Test data can be used to reason scale-up conditions (i.e. more defined conditions). Interesting strai,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+245,240,2,*** Criteria for successful outcome Test-Bioreactor,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+246,245,1,**** Closed carbon balances obtained. Product of interest measured and yields calculated. Cell viability and population heterogeneity. Product toxicity. (By-)product mixtures and DSP considerations.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+247,245,2,**** Testing (Bioreactor) correlates with Design: Selected strains give expected results. Testing works in conditions the Design step predicted.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+248,245,3,**** Testing (Bioreactor) predicts Scale-up: Evaluation of working conditions predicted in HTS. Specific productivity give expected results. Modification of Test conditions gives a predicted outcome. Test data can be used to reason scale-up conditions.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+249,132,6,"** #Output to Learn (also to Design, Build, and Upscale)",NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-05-22 12:27:46
+392,249,1,*** Design for scale up fermentation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T12:35:29Z,NULL
+393,249,2,*** Feed rate for scale up fermentation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-05-22T12:36:14Z,NULL
+250,0,5,* Learn,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+251,250,1,"** Receive input from Design, Build, Test, and Upscale",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+252,250,2,** Data comparison with theoretical/expected results,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+253,252,1,*** Analysis agreements/discrepancies,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+254,250,3,** Proposal for redesign/improvement,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+255,254,1,*** Adaptive laboratory evolution for optimizing and fine tune. [Can be used for #Build],NULL,NULL,NULL,NULL,NULL,"As a method to obtain a strain, this can belong to Build. As a ""natural design process"" from which we learn, this belongs to Learn.",NULL,2018-11-14T14:13:12Z,NULL
+256,0,6,* Scale-up,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+257,256,1,"** Receive input from Design, Build, Test, and Learn",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+258,256,2,** Execute,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+259,258,1,*** Design of experimental conditions,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+260,259,1,**** Summary of collected data from other steps (selection of relevant data),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+261,260,1,***** Transmission of summary experimental data to next step (for Test)? (data format specification),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+262,260,2,***** Data collection for energy requirements prediction,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+263,260,3,***** Data (and optional experiments) on Mass transfer mechanisms and dynamics,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+264,260,4,***** Mixing effect and Mixing efficiencies,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+265,260,5,"***** Definition of optimal control strategies (temp, concentrations etc.)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+266,258,2,*** Inoculum preparation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+267,266,1,**** Strain received from #Build,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+268,266,2,**** Strain revitalization. Initial flask culture,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+269,266,3,**** Cryostocks generation and storage.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+270,258,3,*** Bioreactor culture,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+271,270,1,**** Bioreactor set-up & sterilization,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+272,270,2,**** Chemostat/batch/fedbatch culture for strain characterization.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+273,270,3,**** Fermentation data on-line collection,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+274,270,4,**** Fermentation data off-line analysis,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+275,270,5,"**** Fermentation data validation. (mass balances, reconciliation,…)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+276,258,4,*** Component property modeling,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+277,276,1,"**** Data collection on thermodynamic properties of components and mixtures (chemical and physical equilibria, enthalpies, densities, specific volumes, MW etc.)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+278,276,2,**** Data regression and property predictive models production,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+279,258,5,*** Process Synthesis,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+280,279,1,**** Conceptual and unit and process representation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+281,279,2,**** Superstructure modeling and optimization,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+282,258,6,*** Process simulation #HasSop @NTUA #SopUrl https://goo.gl/vV8T4L,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+283,282,1,"**** Data collection on mass and energy balances, chemical and physical equilibria",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+284,282,2,"**** Modeling of unit processes (reactions, separations recycles)",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+285,282,3,**** Process flowsheeting (process integration and recycles),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+286,282,4,**** Model validation and iteration,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+287,258,7,*** Process optimization,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+288,287,1,**** Process parametric model building and sensitivity analysis,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+289,287,2,**** Parametric optimization,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+290,258,8,*** Process Integration,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+291,290,1,**** Enegry integration,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+292,290,2,**** Material and water integration,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+293,256,3,** Criteria for successful outcome of Scale-up (Criteria to be available as check list table),NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+294,293,1,*** Closed carbon balances obtained and TRY calculated,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+295,293,2,*** Cell viability and population heterogeneity,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+296,293,3,*** Product toxicity limit reached during cultivation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+297,293,4,*** (By-)product mixtures and DSP considerations,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+298,256,4,"** Output to Design, Test, and Learn",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
