@@ -1,0 +1,11 @@
+# Suriname a skos:Concept, [Country](/0.1/Country)
+
+## Subclasses
+
+## Annotations
+
+|||
+|-----|-----|
+|ddbjLabel|Suriname|
+|rdfs:label|Suriname|
+

@@ -1,0 +1,11 @@
+# Maldives a skos:Concept, [Country](/0.1/Country)
+
+## Subclasses
+
+## Annotations
+
+|||
+|-----|-----|
+|ddbjLabel|Maldives|
+|rdfs:label|Maldives|
+
