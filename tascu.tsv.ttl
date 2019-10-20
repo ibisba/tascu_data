@@ -1,0 +1,4026 @@
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+
+<https://tascu.vtt.fi/data/1>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                1 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select host and product" .
+
+<https://tascu.vtt.fi/data/2>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "J-L: QSAR (prediction of properties from structure)." ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                2 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Obtain relevant data for product" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/1> .
+
+<https://tascu.vtt.fi/data/3>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                3 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Obtain physicochemical data (Toxicity, Solubility, InChI,…) for product" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/2> .
+
+<https://tascu.vtt.fi/data/4>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "@Jean-Loup has a tool for toxicity estimation, training data available only for E. coli. For WP7, it is also important to know where the toxicity database is, what kind of access rights etc." ;
+        <http://tascu.vtt.fi/ontology/id>
+                4 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Estimate product toxicity for chassis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/2> .
+
+<https://tascu.vtt.fi/data/5>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Comments: In principle, most of the design pipeline needs to have been executed for the selection of a good host for a selected product." ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                5 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Obtain relevant data for host" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/1> .
+
+<https://tascu.vtt.fi/data/6>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                6 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Genetic  tools" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/5> .
+
+<https://tascu.vtt.fi/data/7>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                7 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Genome sequence" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/5> .
+
+<https://tascu.vtt.fi/data/8>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Strain specific GEMs may be needed for some organisms" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                8 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Genome-scale metabolic model (GEM)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/5> .
+
+<https://tascu.vtt.fi/data/9>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                9 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Collect relevant available (bibliographic, experimental) data (candidate ‘sink’ metabolites)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/5> .
+
+<https://tascu.vtt.fi/data/10>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                10 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Physiological constraints" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/5> .
+
+<https://tascu.vtt.fi/data/11>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                11 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Oxygen requirements" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/10> .
+
+<https://tascu.vtt.fi/data/12>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                12 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Raw material requirements" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/10> .
+
+<https://tascu.vtt.fi/data/13>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "@Jean-Loup has a tool for toxicity estimation, training data available only for E. coli" ;
+        <http://tascu.vtt.fi/ontology/id>
+                13 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Estimate product toxicity for chassis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/10> .
+
+<https://tascu.vtt.fi/data/14>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                14 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process constraints" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/5> .
+
+<https://tascu.vtt.fi/data/15>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                15 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Technoeconomic constraints" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/1> .
+
+<https://tascu.vtt.fi/data/16>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                16 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Estimate market value of product" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/15> .
+
+<https://tascu.vtt.fi/data/17>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                17 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Intellectual Property (IP) constraints" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/15> .
+
+<https://tascu.vtt.fi/data/18>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                18 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "DSP considerations" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/15> .
+
+<https://tascu.vtt.fi/data/19>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                19 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Chassis, substrate, pathway, and product selection" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/1> .
+
+<https://tascu.vtt.fi/data/20>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                20 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Estimate economic feasibility (depends on substrate, pathway, and product)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/19> .
+
+<https://tascu.vtt.fi/data/21>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                21 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Selection of chassis, substrate, pathway, and product" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/19> .
+
+<https://tascu.vtt.fi/data/22>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                22 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design" .
+
+<https://tascu.vtt.fi/data/23>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Check that the prerequisites for Computational Strain Design are fulfilled, i.e. the input includes a SBML for the host, the SBML contains a biomass/growth objective, and that the product is specified with sufficient detail (stereochemistry, chain length, etc)." ;
+        <http://tascu.vtt.fi/ontology/id>
+                23 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive input from \"select host and products\" step" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/22> .
+
+<https://tascu.vtt.fi/data/331>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                331 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive name of production host" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/23> .
+
+<https://tascu.vtt.fi/data/332>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                332 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Obtain SBML models for production hosts" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/23> .
+
+<https://tascu.vtt.fi/data/333>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                333 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Obtain annotated genomes of production hosts" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/23> .
+
+<https://tascu.vtt.fi/data/334>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                334 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive name of product" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/23> .
+
+<https://tascu.vtt.fi/data/24>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                24 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive input from #Upscale #Test-HighThroughput #Test-Bioreactor and #build" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/22> .
+
+<https://tascu.vtt.fi/data/25>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                25 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Physiological constraints" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/24> .
+
+<https://tascu.vtt.fi/data/26>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                26 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Oxygen requirements, pH, solvent, carbon source, substrate and product toxicity, product related energetics, light, temperature" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/25> .
+
+<https://tascu.vtt.fi/data/27>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "(TODO write the steps @NTUA)" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                27 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process constraints." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/24> .
+
+<https://tascu.vtt.fi/data/28>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Product separation requirements; e.g. low pH, minimum titer, unwanted side products that significantly increase the separation cost, etc." ;
+        <http://tascu.vtt.fi/ontology/id>
+                28 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Pressure, ..." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/27> .
+
+<https://tascu.vtt.fi/data/29>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                29 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Execution of Design" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/22> .
+
+<https://tascu.vtt.fi/data/30>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "We might need to rethink this 'Design the chassis' step. Right now it is a bit chaotic and some of the steps inside it are copies of steps mentioned elsewhere. This step can be divided in two parts: 1) deletion of genes; 2) addition of genes. Both parts will contain mandatory genes and genes that could be beneficial (we need some sort of filter or quality check to distinguish between them) . These two types of genes need different follow-up steps. Who is responsible for this step? Maybe they could take a look at it?" ;
+        <http://tascu.vtt.fi/ontology/id>
+                30 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design production strain" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/29> .
+
+<https://tascu.vtt.fi/data/300>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Read literature on known production pathways. -Which reactions are problematic? -What hurdles have they encountered (and how was it solved)? -Compound toxicity? -Enzyme promisquity? Databases -KEGG: pathways, reactions, cofactors, promisquity, known ko/genes, in which organisms are enzymes for those reactions known? -MetaCyc: pathways, reactions, cofactors, promisquity, known/predicted organisms, deltaG? -BRENDA: known substrates, organisms, activators, inhibitors, binding constants, pH optimum, pH tolerance, rate information, mutations" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "Read literature on known production pathways and search for data in databases." ;
+        <http://tascu.vtt.fi/ontology/id>
+                300 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Information search" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/30> .
+
+<https://tascu.vtt.fi/data/326>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                326 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Freedom to operate (IPR considerations)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/300> .
+
+<https://tascu.vtt.fi/data/327>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                327 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Known pathways in literature" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/300> .
+
+<https://tascu.vtt.fi/data/330>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                330 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Known pathways in reaction databases" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/300> .
+
+<https://tascu.vtt.fi/data/328>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "Search patent literature for similar pathways and individual modifications." ;
+        <http://tascu.vtt.fi/ontology/id>
+                328 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Patent search" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/300> .
+
+<https://tascu.vtt.fi/data/31>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                31 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Computational metabolic design" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/30> .
+
+<https://tascu.vtt.fi/data/32>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                32 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Computational product pathway design" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/31> .
+
+<https://tascu.vtt.fi/data/33>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Convert RetroPath output to complete reactions. Check MetaNetX reactions for correctness and electron balancing. For every unknown cofactor, propose plausible cofactors for the chassis considered." ;
+        <http://tascu.vtt.fi/ontology/id>
+                33 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Enumerate pathway options (Retropath,…)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/32> .
+
+<https://tascu.vtt.fi/data/34>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                34 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Screen pathway options based on quality criteria" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/33> .
+
+<https://tascu.vtt.fi/data/321>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                321 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Convert reaction rules to complete reactions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/32> .
+
+<https://tascu.vtt.fi/data/322>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "E.g. define cofactors where cofactors are unknown." ;
+        <http://tascu.vtt.fi/ontology/id>
+                322 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Refine pathways" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/32> .
+
+<https://tascu.vtt.fi/data/35>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Score pathways. Estimate e.g. membrane toxicity of pathway intermediates. Estimate thermodynamic feasibility of reactions in pathway. If necessary, use OBE to find distributed bottlenecks." ;
+        <http://tascu.vtt.fi/ontology/id>
+                35 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Score pathways without chassis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/32> .
+
+<https://tascu.vtt.fi/data/39>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                39 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Membrane toxicity of intermediates" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/35> .
+
+<https://tascu.vtt.fi/data/38>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Use eQuilibrator if no other tool available for pH-dependent thermodynamics." ;
+        <http://tascu.vtt.fi/ontology/id>
+                38 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Thermodynamic feasibility verification" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/35> .
+
+<https://tascu.vtt.fi/data/323>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Optional" ;
+        <http://tascu.vtt.fi/ontology/id>
+                323 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Optimized Bottleneck Energetics" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/35> .
+
+<https://tascu.vtt.fi/data/40>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                40 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Chassis embedment" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/31> .
+
+<https://tascu.vtt.fi/data/41>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                41 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive input from product pathway design" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/42>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                42 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Map metabolites between pathway and chassis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/36>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Add pathway to SBML for chassis. Match pathway metabolites to chassis metabolites. Verify matches by structural comparison. Also check stereochemistry. Prefer starting pathways from cytosolic metabolites. If pathway generates side products, i.e. compounds that aren't chassis metabolites, find the reactions that connects them to the metabolic network of the chassis." ;
+        <http://tascu.vtt.fi/ontology/id>
+                36 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Add production pathway to chassis SBML in silico" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/316>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                316 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Fill metabolic gaps" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/37>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                37 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Screen potential substrates in silico" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/44>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Anaerobic, aerobic, peroxisome active/inactive, etc." ;
+        <http://tascu.vtt.fi/ontology/id>
+                44 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Screen growth conditions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/45>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                45 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Growth-product coupling. (e.g. OptKnock, RobustKnock, Minimal Cut Sets)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/49>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Check that oxygen consumption is reasonable. VTT has a SOP" ;
+        <http://tascu.vtt.fi/ontology/id>
+                49 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Calculate expected yields" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/317>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                317 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Estimate productivities" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/40> .
+
+<https://tascu.vtt.fi/data/324>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                324 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Evaluate and choose pathways" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/31> .
+
+<https://tascu.vtt.fi/data/52>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "The remaining tasks relating to enzyme design could be moved to enzyme design." ;
+        <http://tascu.vtt.fi/ontology/id>
+                52 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Genetic design for chassis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/30> .
+
+<https://tascu.vtt.fi/data/43>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "(e.g. genome re-annotation, literature search. Find the enzymes of the metabolites from the reference databases, and look in the genome whether homologous enzymes exist natively)." ;
+        <http://tascu.vtt.fi/ontology/id>
+                43 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Check for native enzymes with activity for heterologous metabolites" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/52> .
+
+<https://tascu.vtt.fi/data/72>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                72 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Genome reannotation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/43> .
+
+<https://tascu.vtt.fi/data/46>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                46 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Search for native homologues of enzymes acting on the heterologous metabolites" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/43> .
+
+<https://tascu.vtt.fi/data/50>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                50 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Additional trait design" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/52> .
+
+<https://tascu.vtt.fi/data/47>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                47 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Propose desirable traits" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/50> .
+
+<https://tascu.vtt.fi/data/51>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                51 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Bioprospecting for traits" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/50> .
+
+<https://tascu.vtt.fi/data/48>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                48 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Pathway improvement by mutations, supporting/auxiliary pathways, enzymes/cofactor specificity, genetic modifications" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/52> .
+
+<https://tascu.vtt.fi/data/71>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                71 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select promoter types" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/52> .
+
+<https://tascu.vtt.fi/data/54>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                54 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Evaluate and choose strains" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/52> .
+
+<https://tascu.vtt.fi/data/325>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                325 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Describe genetic constructs in SBOL format" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/52> .
+
+<https://tascu.vtt.fi/data/74>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                74 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Store the list of enzyme functions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/30> .
+
+<https://tascu.vtt.fi/data/318>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                318 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Store the list of gene deletions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/30> .
+
+<https://tascu.vtt.fi/data/319>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                319 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Store the list of genotypes" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/30> .
+
+<https://tascu.vtt.fi/data/320>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                320 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Store the list of promoter types" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/30> .
+
+<https://tascu.vtt.fi/data/73>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "This should serve also enzyme screening and protein production; should be expanded if these other applications are relevant. #EnzymeDesign." ;
+        <http://tascu.vtt.fi/ontology/id>
+                73 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select and/or design enzyme" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/29> .
+
+<https://tascu.vtt.fi/data/75>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                75 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "TODO write the steps @INRA" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/307>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                307 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Retrieve the list of enzyme functions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/56>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#RoundRobinNeeded but comparison difficult" ;
+        <http://tascu.vtt.fi/ontology/id>
+                56 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Generate candidate sequences (Enzyme search)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/58>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                58 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Function-based in silico screening of candidate sequences" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/55>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                55 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Choose enzyme sequences" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/57>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                57 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Optimize gene sequences" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/59>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                59 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Remove mobile regulatory elements" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/60>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                60 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Send list of gene additions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/73> .
+
+<https://tascu.vtt.fi/data/301>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Applies equally to production strains, enzyme screening hosts, and protein production hosts." ;
+        <http://tascu.vtt.fi/ontology/id>
+                301 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design DNA constructs for expression host" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/29> .
+
+<https://tascu.vtt.fi/data/53>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                53 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Freedom to operate with regards to the tools #IPRConsiderations" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/308>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                308 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Retrieve the list of gene deletions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/309>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                309 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Retrieve the list of gene additions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/310>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "All cargo defined earlier based on modeling desired phenotype." ;
+        <http://tascu.vtt.fi/ontology/id>
+                310 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Retrieve the list of promoter types" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/311>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "May be combinatorial." ;
+        <http://tascu.vtt.fi/ontology/id>
+                311 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select promoters" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/312>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "May be combinatorial." ;
+        <http://tascu.vtt.fi/ontology/id>
+                312 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select integration sites/loci" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/61>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                61 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select genome editing strategy" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/62>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                62 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "CRISPR/Cas9 #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/61> .
+
+<https://tascu.vtt.fi/data/63>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                63 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "MAGE: genome engineering #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/61> .
+
+<https://tascu.vtt.fi/data/313>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                313 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select vectors/plasmids/DNA constructs" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/64>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                64 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select vector assembly strategy" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/65>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                65 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "SEVA/METABRICK, Moclo, Gibson pathway engineering @Wageningen" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/64> .
+
+<https://tascu.vtt.fi/data/66>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                66 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "#TODO add the list of tasks needed #ToBeReviewed" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/65> .
+
+<https://tascu.vtt.fi/data/67>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                67 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Vector, promoter selection, plasmids, locus of integration, restriction sites, etc (cloning strategy) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/64> .
+
+<https://tascu.vtt.fi/data/68>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                68 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Combinatorial assembly strategy #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/64> .
+
+<https://tascu.vtt.fi/data/314>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                314 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "List DNA fragments to order" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/69>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                69 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Describe genetic constructs in SBOL format" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/70>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                70 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Deposit to a database that we are to create #ToBeReviewed" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/69> .
+
+<https://tascu.vtt.fi/data/315>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                315 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Send strain designs to Build" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/301> .
+
+<https://tascu.vtt.fi/data/302>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                302 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design growth medium and cultivation conditions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/29> .
+
+<https://tascu.vtt.fi/data/304>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                304 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive list of genotypes" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/302> .
+
+<https://tascu.vtt.fi/data/303>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "The Build task will make sure the genotype is correct." ;
+        <http://tascu.vtt.fi/ontology/id>
+                303 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design experiments to test phenotype" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/302> .
+
+<https://tascu.vtt.fi/data/305>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                305 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Send list of growth media and cultivation conditions to Test" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/302> .
+
+<https://tascu.vtt.fi/data/306>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                306 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Send predicted clone behavior to Test" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/302> .
+
+<https://tascu.vtt.fi/data/76>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "This could be a SOP" ;
+        <http://tascu.vtt.fi/ontology/id>
+                76 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Criteria for successful outcome of #Design (Criteria to be available as check list table)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/22> .
+
+<https://tascu.vtt.fi/data/77>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                77 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Calculation of theoretical yields/productivities carried out" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/78>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "We need to use optimization tools that can provide a trade-off" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                78 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Consideration to the specificity of the process (for the product) (selectivity, side products)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/79>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                79 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design suits the chassis (and its genotype)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/80>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                80 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design expected to be stable in vivo" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/81>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                81 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Build designs made #Output" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/82>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                82 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Test conditions designed" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/83>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                83 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Upscale conditions considered #UpscaleConsideration" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/84>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                84 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Test conditions considered and predicted strain behavior expected to be measureable in #Test-HighThroughput conditions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/85>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                85 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Predicted effect of modifications on flux ratios expected to be measurable in Test conditions (e.g. product and/or precursor)." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/86>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                86 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Appropriate MTAs and other agreements in place" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/76> .
+
+<https://tascu.vtt.fi/data/87>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                87 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Output to Build" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/22> .
+
+<https://tascu.vtt.fi/data/88>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#StandardsNeeded for cloning strategies etc" ;
+        <http://tascu.vtt.fi/ontology/id>
+                88 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Build" .
+
+<https://tascu.vtt.fi/data/89>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                89 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive input from Design: strain and vector designs" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/88> .
+
+<https://tascu.vtt.fi/data/335>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "(e.g. plasmid pDGJ537, restriction enzyme reDGJ, oligo dsyt985v85vnts --> pDSYT985)" ;
+        <http://tascu.vtt.fi/ontology/id>
+                335 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive high-level step-by-step instructions for construction of DNA constructs" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/89> .
+
+<https://tascu.vtt.fi/data/336>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                336 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive plasmid maps in SBOL format" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/89> .
+
+<https://tascu.vtt.fi/data/337>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                337 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive list of oligos in FASTA format to be ordered for DNA fragment constrution" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/89> .
+
+<https://tascu.vtt.fi/data/338>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "(e.g. strain CEN.PK,  plasmid pDSYT985, restriction enzyme reDUS, oligos 2g9fh5, n953f7, and 95gn, yeast recombination)" ;
+        <http://tascu.vtt.fi/ontology/id>
+                338 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive high-level step-by-step instructions for strain construction" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/89> .
+
+<https://tascu.vtt.fi/data/339>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                339 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive list of primers in FASTA format for verification and the SOP of the verification method" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/89> .
+
+<https://tascu.vtt.fi/data/90>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                90 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive #Input from #Test-HighThroughput #Test-Bioreactor #Upscale" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/88> .
+
+<https://tascu.vtt.fi/data/91>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "This step could benefit from a few additional steps that deal with knock-outs specifically. At the moment most steps describe the knock-in process (integration and insertion).  #SopNeeded #RoundRobinNeeded" ;
+        <http://tascu.vtt.fi/ontology/id>
+                91 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Execution of Build" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/88> .
+
+<https://tascu.vtt.fi/data/95>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                95 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Creation of DNA constructs" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/91> .
+
+<https://tascu.vtt.fi/data/92>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                92 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Order/synthesize genetic material" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/95> .
+
+<https://tascu.vtt.fi/data/93>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded for genetic storage" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                93 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive genetic material" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/92> .
+
+<https://tascu.vtt.fi/data/381>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                381 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare genetic material for transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/93> .
+
+<https://tascu.vtt.fi/data/383>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                383 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare liquid cultivation medium for transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/93> .
+
+<https://tascu.vtt.fi/data/387>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                387 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare solid cultivation medium for transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/93> .
+
+<https://tascu.vtt.fi/data/384>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                384 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare cultivation media for making glycerol stocks" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/93> .
+
+<https://tascu.vtt.fi/data/385>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                385 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transform genetic material into cloning host organism" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/93> .
+
+<https://tascu.vtt.fi/data/386>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                386 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Make glycerol stock" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/93> .
+
+<https://tascu.vtt.fi/data/94>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                94 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Verify genetic material by DNA sequence" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/92> .
+
+<https://tascu.vtt.fi/data/96>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded for withdrawal" ;
+        <http://tascu.vtt.fi/ontology/id>
+                96 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Withdraw genetic material from storage" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/95> ;
+        <http://tascu.vtt.fi/ontology/protocol>
+                <https://hub.ibisba.eu/sops/59?version=1> .
+
+<https://tascu.vtt.fi/data/98>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                98 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Assembly of DNA parts" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/95> .
+
+<https://tascu.vtt.fi/data/349>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                349 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "In vitro assembly of the DNA construct" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/98> ;
+        <http://tascu.vtt.fi/ontology/protocol>
+                <https://drive.google.com/open?id=1zPZF2czFpIIf8-Z2ntBj1nXWQtfg6FgY> .
+
+<https://tascu.vtt.fi/data/350>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                350 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transformation of the DNA construct into the cloning host organism" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/98> .
+
+<https://tascu.vtt.fi/data/366>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                366 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare cultivation media for transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/350> .
+
+<https://tascu.vtt.fi/data/367>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                367 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare cultivation media after colony picking" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/350> .
+
+<https://tascu.vtt.fi/data/369>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                369 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/350> .
+
+<https://tascu.vtt.fi/data/356>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                356 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Colony picking for verification of DNA constructs" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/350> .
+
+<https://tascu.vtt.fi/data/368>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                368 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Withdraw cloning host organism from storage" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/350> .
+
+<https://tascu.vtt.fi/data/99>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                99 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Verification of DNA constructs" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/95> .
+
+<https://tascu.vtt.fi/data/363>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                363 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare primers for verification of the DNA construct" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/99> .
+
+<https://tascu.vtt.fi/data/364>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                364 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare template DNA for verification of the DNA construct" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/99> .
+
+<https://tascu.vtt.fi/data/365>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                365 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Recombinant clone screening" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/99> .
+
+<https://tascu.vtt.fi/data/345>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                345 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Storage of the DNA construct" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/95> .
+
+<https://tascu.vtt.fi/data/346>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                346 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cryostock preparation for the cloning host carrying the DNA construct" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/345> .
+
+<https://tascu.vtt.fi/data/347>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                347 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Make glycerol stock #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/346> ;
+        <http://tascu.vtt.fi/ontology/protocol>
+                <https://drive.google.com/open?id=1y80SYGUnF9VDrgF09_izEyBXnyFljOuAI7SUn1FV1Is> .
+
+<https://tascu.vtt.fi/data/348>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                348 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Add label/barcode #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/346> .
+
+<https://tascu.vtt.fi/data/351>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                351 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Creation of the integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/91> .
+
+<https://tascu.vtt.fi/data/361>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                361 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "In vitro assembly of the integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/351> .
+
+<https://tascu.vtt.fi/data/362>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                362 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transformation of the integration/expression vector into the cloning host organism" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/351> .
+
+<https://tascu.vtt.fi/data/370>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                370 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare cultivation media for transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/362> .
+
+<https://tascu.vtt.fi/data/371>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                371 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare cultivation media after colony picking" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/362> .
+
+<https://tascu.vtt.fi/data/372>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                372 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Withdraw cloning host organism from storage" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/362> .
+
+<https://tascu.vtt.fi/data/373>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                373 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transformation into the cloning host organism" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/362> .
+
+<https://tascu.vtt.fi/data/374>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                374 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Colony picking for verification of the integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/362> .
+
+<https://tascu.vtt.fi/data/343>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "Verification by sequencing of the assembled DNA construct" ;
+        <http://tascu.vtt.fi/ontology/id>
+                343 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Verify DNA sequence of the construct" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/351> .
+
+<https://tascu.vtt.fi/data/375>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                375 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare primers for verification of the integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/343> .
+
+<https://tascu.vtt.fi/data/376>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                376 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare template DNA for verification of the integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/343> .
+
+<https://tascu.vtt.fi/data/377>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                377 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Recombinant clone screening" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/343> .
+
+<https://tascu.vtt.fi/data/378>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                378 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Storage of the integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/351> .
+
+<https://tascu.vtt.fi/data/380>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                380 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cryostock preparation for the cloning host carrying the integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/378> .
+
+<https://tascu.vtt.fi/data/379>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                379 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Make glycerol stock" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/380> .
+
+<https://tascu.vtt.fi/data/100>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                100 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/91> .
+
+<https://tascu.vtt.fi/data/101>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                101 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Non-HT transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/100> .
+
+<https://tascu.vtt.fi/data/102>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded for preparing solid culture media" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                102 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare cultivation media for transformation step" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/101> .
+
+<https://tascu.vtt.fi/data/103>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded for preparing liquid culture media" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                103 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare cultivation media for cultivation after colony picking" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/101> .
+
+<https://tascu.vtt.fi/data/104>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded for withdrawal of strains" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                104 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Withdraw background strain from storage" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/101> .
+
+<https://tascu.vtt.fi/data/105>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded for use of restriction enzymes" ;
+        <http://tascu.vtt.fi/ontology/id>
+                105 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare genetic material for transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/101> ;
+        <http://tascu.vtt.fi/ontology/protocol>
+                <https://drive.google.com/open?id=1SwFf5E5D0nY5IGD8epUa7Vkc-9x1z3Oe> .
+
+<https://tascu.vtt.fi/data/106>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                106 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transformation #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/101> .
+
+<https://tascu.vtt.fi/data/107>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#CriteriaNeeded" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                107 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Colony picking" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/101> .
+
+<https://tascu.vtt.fi/data/108>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                108 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "HT- transformation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/100> .
+
+<https://tascu.vtt.fi/data/109>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                109 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Preparation and distribution of transformation medium  in µplates format" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/108> .
+
+<https://tascu.vtt.fi/data/110>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                110 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Preparation and distribution of recovery medium in µplates format" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/108> .
+
+<https://tascu.vtt.fi/data/111>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                111 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cell preparation from stock solution" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/108> .
+
+<https://tascu.vtt.fi/data/112>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                112 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Select transformation conditions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/108> .
+
+<https://tascu.vtt.fi/data/113>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                113 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "incubation of cells in recovery medium" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/108> .
+
+<https://tascu.vtt.fi/data/114>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                114 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Automated HT spreadind using colony picker with compartementalized Qtrays" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/108> .
+
+<https://tascu.vtt.fi/data/115>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                115 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Automated recovery of transformant and distribution in appropriate format" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/108> .
+
+<https://tascu.vtt.fi/data/116>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/id>
+                116 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Verification of the transformants" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/91> .
+
+<https://tascu.vtt.fi/data/117>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                117 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare primers for verification sequencing" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/116> .
+
+<https://tascu.vtt.fi/data/118>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "(CRISPR/Cas9 tends to produce more than one)" ;
+        <http://tascu.vtt.fi/ontology/id>
+                118 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Quantify integration count" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/116> .
+
+<https://tascu.vtt.fi/data/119>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                119 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Verify integration loci" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/116> .
+
+<https://tascu.vtt.fi/data/120>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                120 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Verify insertion completeness" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/116> .
+
+<https://tascu.vtt.fi/data/121>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                121 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Check how many independent clones are needed" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/116> .
+
+<https://tascu.vtt.fi/data/122>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                122 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Recombinant clone screening and selection (depends on transformation implementation) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/116> .
+
+<https://tascu.vtt.fi/data/123>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                123 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Storage of clones" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/91> .
+
+<https://tascu.vtt.fi/data/124>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded for cryostock preparation and labeling/barcoding" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                124 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cryostock preparation (triplicates needed)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/123> .
+
+<https://tascu.vtt.fi/data/125>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                125 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Make glycerol stock #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/124> ;
+        <http://tascu.vtt.fi/ontology/protocol>
+                <https://drive.google.com/open?id=1pK3pXq2jPZ2fWxcDbK1wWvWpG6NWo7La> .
+
+<https://tascu.vtt.fi/data/126>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                126 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Add label/barcode #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/124> .
+
+<https://tascu.vtt.fi/data/127>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                127 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Criteria for successful execution of Build  (Criteria to be available as check list table)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/88> .
+
+<https://tascu.vtt.fi/data/128>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                128 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Correct parts assembly." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/127> .
+
+<https://tascu.vtt.fi/data/129>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                129 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "No ”off-target” clones." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/127> .
+
+<https://tascu.vtt.fi/data/130>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                130 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Sufficient and balanced genetic variation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/127> .
+
+<https://tascu.vtt.fi/data/131>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                131 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Output to Test (also to Design, Learn and Upscale)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/88> .
+
+<https://tascu.vtt.fi/data/132>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "Test phase of the DBTL cycle involves testing of the strains constructed in the Build phase  Define the wanted outcome. Definition of the outcome for the Test phase determines the choice of culture conditions and scale. If rich data is required, testing of the strains should be done in bioreactors. Otherwise, microtiter or shake flask cultivations can be used instead  Check which products are produced and review the literature for their localization in the cell and what are their physiological and physicochemical properties. Depending on these variables, select appropriate process type and analytical procedures that will produce the data defined in the wanted outcome.  Define DSP strategy based on the localization and physicochemical properties of the product.  Draft a list all participating organizations offering services used in testing the strains." ;
+        <http://tascu.vtt.fi/ontology/id>
+                132 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Test" .
+
+<https://tascu.vtt.fi/data/388>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                388 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define test conditions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/132> .
+
+<https://tascu.vtt.fi/data/389>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                389 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define fermentation conditions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/388> .
+
+<https://tascu.vtt.fi/data/390>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                390 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define fermentation media compositions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/388> .
+
+<https://tascu.vtt.fi/data/391>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                391 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define assay conditions for enzymatic activity analyses" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/388> .
+
+<https://tascu.vtt.fi/data/133>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                133 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive #inputs from Build" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/132> .
+
+<https://tascu.vtt.fi/data/358>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                358 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive colonies to be tested for the presence of correct DNA construct" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/133> .
+
+<https://tascu.vtt.fi/data/354>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                354 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive colonies to be tested for the presence of correct integration/expression vector" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/133> .
+
+<https://tascu.vtt.fi/data/355>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                355 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive colonies to be tested for the correct strain construction" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/133> .
+
+<https://tascu.vtt.fi/data/340>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                340 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive clones to be tested as frozen glycerol stocks" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/133> .
+
+<https://tascu.vtt.fi/data/134>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                134 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive #inputs from the #Upscale #UpscaleConsideration" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/132> .
+
+<https://tascu.vtt.fi/data/135>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                135 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Execution" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/132> .
+
+<https://tascu.vtt.fi/data/136>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                136 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Execution of Test-High throughput" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/135> .
+
+<https://tascu.vtt.fi/data/137>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "This step can be deleted, as it is a copy of the step below." ;
+        <http://tascu.vtt.fi/ontology/id>
+                137 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design (cultivation) Culture design" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/136> .
+
+<https://tascu.vtt.fi/data/138>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                138 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define culture conditions and regimes (volumes, kLa,…)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/137> .
+
+<https://tascu.vtt.fi/data/139>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                139 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define data to collect/analysis to perform. reaction kinetics data, reaction (growth expression identification)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/137> .
+
+<https://tascu.vtt.fi/data/140>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                140 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Output cultivation designs to Upscale #DataFormatNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/137> .
+
+<https://tascu.vtt.fi/data/141>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                141 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Output predicted clone behavior to Learn #DataFormatNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/137> .
+
+<https://tascu.vtt.fi/data/142>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                142 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design test conditions and cultivations" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/136> .
+
+<https://tascu.vtt.fi/data/143>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                143 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define culture conditions and regimes (HTS, Bench Scale Bioreactor test)." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/142> .
+
+<https://tascu.vtt.fi/data/144>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                144 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Define data to collect/analysis to perform." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/142> .
+
+<https://tascu.vtt.fi/data/145>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                145 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Describe test designs #DataFormatNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/142> .
+
+<https://tascu.vtt.fi/data/146>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                146 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transmission of predicted clone behavior to T6.4 #DataFormatNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/142> .
+
+<https://tascu.vtt.fi/data/147>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "This could also be part of #build" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                147 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Preparation of clones for testing" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/136> .
+
+<https://tascu.vtt.fi/data/148>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "Seems to me that this was already done by the Build team!" ;
+        <http://tascu.vtt.fi/ontology/id>
+                148 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Removal of unnecessary vectors and cas9" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/147> .
+
+<https://tascu.vtt.fi/data/149>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                149 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Inoculum preparation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/136> .
+
+<https://tascu.vtt.fi/data/150>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                150 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Strains from Build received" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/149> .
+
+<https://tascu.vtt.fi/data/151>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                151 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Strain revitalization" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/149> .
+
+<https://tascu.vtt.fi/data/152>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                152 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cryostocks generation and storage." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/149> .
+
+<https://tascu.vtt.fi/data/153>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                153 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Test (HTS) HT screening in microtiter format (microtiter plate)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/136> .
+
+<https://tascu.vtt.fi/data/154>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                154 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare culture media" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/153> .
+
+<https://tascu.vtt.fi/data/155>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                155 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Withdraw clones from storage" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/153> .
+
+<https://tascu.vtt.fi/data/156>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                156 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cell solutions dispended in appropriate medium (automatically or via robotic script)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/153> .
+
+<https://tascu.vtt.fi/data/157>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                157 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Set up incubation parameters (T°/Stirring rate/measurment rate/wavelenght)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/153> .
+
+<https://tascu.vtt.fi/data/158>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                158 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Incubation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/153> .
+
+<https://tascu.vtt.fi/data/159>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                159 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Realisation of kinetics or end point experiments" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/153> .
+
+<https://tascu.vtt.fi/data/160>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                160 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "pH" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/159> .
+
+<https://tascu.vtt.fi/data/161>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                161 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Exometabolites, untargeted" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/159> .
+
+<https://tascu.vtt.fi/data/162>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                162 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Exometabolites, targeted" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/159> .
+
+<https://tascu.vtt.fi/data/163>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                163 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Lipidomics" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/159> .
+
+<https://tascu.vtt.fi/data/164>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                164 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "HPLC -MS/MS (The second MS is mostly for identification)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/159> .
+
+<https://tascu.vtt.fi/data/165>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                165 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "HT screening solid state" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/136> .
+
+<https://tascu.vtt.fi/data/166>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                166 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Set up of a phenotypic screens" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/165> .
+
+<https://tascu.vtt.fi/data/167>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                167 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Sterile medium plate & µplate preparation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/165> .
+
+<https://tascu.vtt.fi/data/168>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                168 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Screening experiments (colony picker)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/165> .
+
+<https://tascu.vtt.fi/data/169>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                169 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Selection and picking (colony selection and µplate rearraying)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/165> .
+
+<https://tascu.vtt.fi/data/170>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                170 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "HT screening using flow cytometry" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/136> .
+
+<https://tascu.vtt.fi/data/171>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                171 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Without sorting" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/170> .
+
+<https://tascu.vtt.fi/data/172>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                172 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Set up of fluorescence/morphology screens" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/173>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                173 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Sterile medium plate & µplate preparation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/174>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                174 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "µplate culture" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/175>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                175 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "µplate duplication" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/176>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                176 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "cytometer callibration" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/177>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                177 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Screening experiments (analyser cytometer)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/178>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                178 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Selection and pipetting of interesting well" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/179>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                179 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Strain back-up" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/171> .
+
+<https://tascu.vtt.fi/data/180>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                180 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "With sorting" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/170> .
+
+<https://tascu.vtt.fi/data/181>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                181 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Set up of fluorescence/morphology screens" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/180> .
+
+<https://tascu.vtt.fi/data/182>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                182 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Sterile medium" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/180> .
+
+<https://tascu.vtt.fi/data/183>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                183 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Heterogeneic population culture" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/180> .
+
+<https://tascu.vtt.fi/data/184>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                184 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "preliminary enrichment population" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/180> .
+
+<https://tascu.vtt.fi/data/185>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                185 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Screening experiments (sorter cytometer / clone sorting)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/180> .
+
+<https://tascu.vtt.fi/data/186>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                186 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Culture of one cell per well" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/180> .
+
+<https://tascu.vtt.fi/data/187>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                187 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Strain back-up" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/180> .
+
+<https://tascu.vtt.fi/data/188>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                188 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Execution of Test-Bioreactor #Test-Bioreactor @UAB" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/135> .
+
+<https://tascu.vtt.fi/data/189>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                189 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive #Input from the #Test-HighThroughput" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/188> .
+
+<https://tascu.vtt.fi/data/190>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                190 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Chemostat/batch/fedbatch culture for Strain characterization / Bioprocess development" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/188> .
+
+<https://tascu.vtt.fi/data/191>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#HasSop @UAB" ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                191 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Bioreactor set-up  (Bench Scale Bioreactor test) (steps according to equipment) #SopNeeded #RoundRobinNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/190> .
+
+<https://tascu.vtt.fi/data/192>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                192 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Sterilization #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/191> .
+
+<https://tascu.vtt.fi/data/193>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                193 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Probe calibration (pH, DO, T) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/191> .
+
+<https://tascu.vtt.fi/data/194>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                194 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Gas sensor calibration (CO2, O2) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/191> .
+
+<https://tascu.vtt.fi/data/195>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                195 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Pump calibration #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/191> .
+
+<https://tascu.vtt.fi/data/196>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                196 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Set-up monitoring and control software" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/191> .
+
+<https://tascu.vtt.fi/data/197>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                197 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Feeding and collection tanks and culture media preparation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/190> .
+
+<https://tascu.vtt.fi/data/198>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "#SopNeeded because errors can't be traced back #HasSop @UAB @VTT" ;
+        <http://tascu.vtt.fi/ontology/id>
+                198 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Culture media preparation #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/197> .
+
+<https://tascu.vtt.fi/data/199>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                199 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Bioreactor, feeding and collection tanks preparation and filling #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/197> .
+
+<https://tascu.vtt.fi/data/200>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                200 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Sterilization #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/197> .
+
+<https://tascu.vtt.fi/data/201>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                201 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Fermentation run" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/190> .
+
+<https://tascu.vtt.fi/data/202>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                202 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Set culture conditions (T, pH, liquid flow, gas flow) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/201> .
+
+<https://tascu.vtt.fi/data/203>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                203 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Start of On-line data collection" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/201> .
+
+<https://tascu.vtt.fi/data/204>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                204 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Inoculation #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/201> .
+
+<https://tascu.vtt.fi/data/394>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                394 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Test the presence of microbial contaminants" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/201> .
+
+<https://tascu.vtt.fi/data/395>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                395 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Plate the culture medium on solid agar plates" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/394> .
+
+<https://tascu.vtt.fi/data/396>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                396 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Inspect solid agar plates under a light microscope" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/394> .
+
+<https://tascu.vtt.fi/data/205>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                205 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Sample collection, storage and management #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/201> .
+
+<https://tascu.vtt.fi/data/206>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                206 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "13C Labelling (when necessary) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/201> .
+
+<https://tascu.vtt.fi/data/207>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                207 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Post-fermentation tasks" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/190> .
+
+<https://tascu.vtt.fi/data/208>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                208 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Bioreactor washing #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/207> .
+
+<https://tascu.vtt.fi/data/209>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                209 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Waste treatment #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/207> .
+
+<https://tascu.vtt.fi/data/210>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                210 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "On-line fermentation data recovery" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/207> .
+
+<https://tascu.vtt.fi/data/211>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                211 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Fermentation off-line analysis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/188> .
+
+<https://tascu.vtt.fi/data/212>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                212 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cell dry weight measurement #SopNeeded #HasSop @UAB @VTT #RoundRobinNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/213>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                213 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cell biomass analysis. (dry weight, biomass elemental and/or macromolecular composition ) #SopNeeded #HasSop @UAB" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/214>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                214 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Biological/Enzymatic analyses #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/397>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                397 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Quantification of the product using the Bradford assay" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/214> .
+
+<https://tascu.vtt.fi/data/398>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                398 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Characterization of the product with SDS PAGE" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/214> .
+
+<https://tascu.vtt.fi/data/399>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                399 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Enzyme activity assays" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/214> .
+
+<https://tascu.vtt.fi/data/215>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                215 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Flow Cytometry #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/216>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                216 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Exometabolite analysis (Task) #SopNeeded #HasSop @UAB #RoundRobinNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/217>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                217 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Obtain sample(s) (Instruction), Glass vial or µtiter plate expected" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/218>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                218 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Optional: make dilutions (Instruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/219>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                219 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Register sample(s) into LIMS (Instruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/220>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                220 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Put sample(s) to short-term storage (Instruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/221>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                221 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Prepare run(s) by obtaining reagents etc (Instruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/222>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                222 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Make derivations if necessary (Intruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/223>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                223 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Add internal standards where necessary (Instruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/224>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                224 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Run sample(s) for targeted metabolomics (Instruction), run duplicates according to quality control plan" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/225>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                225 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Quantify (Instruction), typically for targeted metabolomics" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/226>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                226 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Run sample(s) for untargeted metabolomics (Instruction), run duplicates according to quality control plan" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/227>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                227 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Identify (Instruction), typically for untargeted metabolomics" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/228>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                228 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Quality control (check signal within range, dilute and rerun if necessary)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/229>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                229 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Save results to LIMS (Instruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/230>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                230 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Reporting (Instruction)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/216> .
+
+<https://tascu.vtt.fi/data/231>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                231 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cellular metabolome analysis (un labelled) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/232>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                232 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cellular metabolome analysis (13C-labelled) #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/233>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                233 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transcriptome analysis #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/234>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                234 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Proteome analysis #SopNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/211> .
+
+<https://tascu.vtt.fi/data/235>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                235 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Data processing" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/188> .
+
+<https://tascu.vtt.fi/data/236>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                236 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Fermentation data validation. (mass balances, reconciliation,…) #SopNeeded #RoundRobinNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/235> .
+
+<https://tascu.vtt.fi/data/237>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                237 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Metabolic flux analysis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/235> .
+
+<https://tascu.vtt.fi/data/238>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                238 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Summary of collected data relevant for T6.4 (selection of relevant data) #RoundRobinNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/235> .
+
+<https://tascu.vtt.fi/data/239>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                239 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transmission of summary experimental data to next step (data format specification) #SopNeeded #RoundRobinNeeded" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/235> .
+
+<https://tascu.vtt.fi/data/240>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                240 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Criteria for successful outcome of Test (Criteria to be available as check list table)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/132> .
+
+<https://tascu.vtt.fi/data/241>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                241 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Criteria for successful outcome Test-High throughput" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/240> .
+
+<https://tascu.vtt.fi/data/242>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                242 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Background variation known and excluded; positive and negative references distinguishable. Predicted mutant behaviour expected to be measurable. Conditions are controllable." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/241> .
+
+<https://tascu.vtt.fi/data/243>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                243 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Testing (HTS) correlates with Design: Genetic changes are seen in Test conditions (e.g. mRNA level). Reference strains give expected results. Variation between different mutant strains. Testing works in conditions the Design step predicted.  " ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/241> .
+
+<https://tascu.vtt.fi/data/244>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                244 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Testing (HTS) predicts Scale-up: Specific productivity and ”carbon balances” measureable. Modification of Test conditions gives a predicted outcome. Test data can be used to reason scale-up conditions (i.e. more defined conditions). Interesting strai" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/241> .
+
+<https://tascu.vtt.fi/data/245>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                245 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Criteria for successful outcome Test-Bioreactor" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/240> .
+
+<https://tascu.vtt.fi/data/246>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                246 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Closed carbon balances obtained. Product of interest measured and yields calculated. Cell viability and population heterogeneity. Product toxicity. (By-)product mixtures and DSP considerations." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/245> .
+
+<https://tascu.vtt.fi/data/247>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                247 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Testing (Bioreactor) correlates with Design: Selected strains give expected results. Testing works in conditions the Design step predicted." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/245> .
+
+<https://tascu.vtt.fi/data/248>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                248 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Testing (Bioreactor) predicts Scale-up: Evaluation of working conditions predicted in HTS. Specific productivity give expected results. Modification of Test conditions gives a predicted outcome. Test data can be used to reason scale-up conditions." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/245> .
+
+<https://tascu.vtt.fi/data/249>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                249 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "#Output to Learn (also to Design, Build, and Upscale)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/132> .
+
+<https://tascu.vtt.fi/data/392>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                392 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design for scale up fermentation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/249> .
+
+<https://tascu.vtt.fi/data/393>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                393 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Feed rate for scale up fermentation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/249> .
+
+<https://tascu.vtt.fi/data/250>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                250 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Learn" .
+
+<https://tascu.vtt.fi/data/251>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                251 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive input from Design, Build, Test, and Upscale" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/250> .
+
+<https://tascu.vtt.fi/data/252>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                252 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Data comparison with theoretical/expected results" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/250> .
+
+<https://tascu.vtt.fi/data/253>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                253 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Analysis agreements/discrepancies" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/252> .
+
+<https://tascu.vtt.fi/data/254>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                254 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Proposal for redesign/improvement" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/250> .
+
+<https://tascu.vtt.fi/data/255>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/comment>
+                "As a method to obtain a strain, this can belong to Build. As a natural design process from which we learn, this belongs to Learn." ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                255 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Adaptive laboratory evolution for optimizing and fine tune. [Can be used for #Build]" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/254> .
+
+<https://tascu.vtt.fi/data/256>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/id>
+                256 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Scale-up" .
+
+<https://tascu.vtt.fi/data/257>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                257 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Receive input from Design, Build, Test, and Learn" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/256> .
+
+<https://tascu.vtt.fi/data/258>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                258 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Execute" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/256> .
+
+<https://tascu.vtt.fi/data/259>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                259 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Design of experimental conditions" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/260>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                260 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Summary of collected data from other steps (selection of relevant data)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/259> .
+
+<https://tascu.vtt.fi/data/261>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                261 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Transmission of summary experimental data to next step (for Test)? (data format specification)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/260> .
+
+<https://tascu.vtt.fi/data/262>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                262 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Data collection for energy requirements prediction" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/260> .
+
+<https://tascu.vtt.fi/data/263>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                263 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Data (and optional experiments) on Mass transfer mechanisms and dynamics" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/260> .
+
+<https://tascu.vtt.fi/data/264>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                264 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Mixing effect and Mixing efficiencies" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/260> .
+
+<https://tascu.vtt.fi/data/265>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                265 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Definition of optimal control strategies (temp, concentrations etc.)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/260> .
+
+<https://tascu.vtt.fi/data/266>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                266 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Inoculum preparation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/267>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                267 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Strain received from #Build" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/266> .
+
+<https://tascu.vtt.fi/data/268>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                268 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Strain revitalization. Initial flask culture" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/266> .
+
+<https://tascu.vtt.fi/data/269>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                269 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cryostocks generation and storage." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/266> .
+
+<https://tascu.vtt.fi/data/270>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                270 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Bioreactor culture" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/271>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                271 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Bioreactor set-up & sterilization" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/270> .
+
+<https://tascu.vtt.fi/data/272>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                272 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Chemostat/batch/fedbatch culture for strain characterization." ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/270> .
+
+<https://tascu.vtt.fi/data/273>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                273 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Fermentation data on-line collection" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/270> .
+
+<https://tascu.vtt.fi/data/274>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                274 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Fermentation data off-line analysis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/270> .
+
+<https://tascu.vtt.fi/data/275>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                275 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Fermentation data validation. (mass balances, reconciliation,…)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/270> .
+
+<https://tascu.vtt.fi/data/276>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                276 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Component property modeling" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/277>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                277 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Data collection on thermodynamic properties of components and mixtures (chemical and physical equilibria, enthalpies, densities, specific volumes, MW etc.)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/276> .
+
+<https://tascu.vtt.fi/data/278>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                278 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Data regression and property predictive models production" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/276> .
+
+<https://tascu.vtt.fi/data/279>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                279 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process Synthesis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/280>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                280 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Conceptual and unit and process representation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/279> .
+
+<https://tascu.vtt.fi/data/281>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                281 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Superstructure modeling and optimization" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/279> .
+
+<https://tascu.vtt.fi/data/282>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                282 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process simulation #HasSop @NTUA #SopUrl https://goo.gl/vV8T4L" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/283>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                283 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Data collection on mass and energy balances, chemical and physical equilibria" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/282> .
+
+<https://tascu.vtt.fi/data/284>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                284 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Modeling of unit processes (reactions, separations recycles)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/282> .
+
+<https://tascu.vtt.fi/data/285>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                285 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process flowsheeting (process integration and recycles)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/282> .
+
+<https://tascu.vtt.fi/data/286>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                286 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Model validation and iteration" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/282> .
+
+<https://tascu.vtt.fi/data/287>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                287 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process optimization" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/288>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                288 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process parametric model building and sensitivity analysis" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/287> .
+
+<https://tascu.vtt.fi/data/289>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                289 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Parametric optimization" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/287> .
+
+<https://tascu.vtt.fi/data/290>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                290 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Process Integration" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/258> .
+
+<https://tascu.vtt.fi/data/291>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                291 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Enegry integration" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/290> .
+
+<https://tascu.vtt.fi/data/292>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                292 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Material and water integration" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/290> .
+
+<https://tascu.vtt.fi/data/293>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                293 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Criteria for successful outcome of Scale-up (Criteria to be available as check list table)" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/256> .
+
+<https://tascu.vtt.fi/data/294>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                294 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Closed carbon balances obtained and TRY calculated" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/293> .
+
+<https://tascu.vtt.fi/data/295>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                295 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Cell viability and population heterogeneity" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/293> .
+
+<https://tascu.vtt.fi/data/296>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                296 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Product toxicity limit reached during cultivation" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/293> .
+
+<https://tascu.vtt.fi/data/297>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                297 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "(By-)product mixtures and DSP considerations" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/293> .
+
+<https://tascu.vtt.fi/data/298>
+        a       <http://tascu.vtt.fi/ontology/Step> ;
+        <http://tascu.vtt.fi/ontology/description>
+                "NULL" ;
+        <http://tascu.vtt.fi/ontology/id>
+                298 ;
+        <http://tascu.vtt.fi/ontology/name>
+                "Output to Design, Test, and Learn" ;
+        <http://tascu.vtt.fi/ontology/parent>
+                <https://tascu.vtt.fi/data/256> .
