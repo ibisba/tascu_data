@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A written argument submitted to a court.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Brief|
 
 ## Properties

@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|An edited book.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Edited Book|
 
 ## Properties

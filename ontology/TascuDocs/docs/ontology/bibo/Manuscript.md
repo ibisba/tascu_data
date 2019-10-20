@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|An unpublished Document, which may also be submitted to a publisher for publication.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Manuscript|
 
 ## Properties

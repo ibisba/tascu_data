@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|aka movie.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Film|
 
 ## Properties

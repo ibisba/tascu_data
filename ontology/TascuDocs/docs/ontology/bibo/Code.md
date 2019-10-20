@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A collection of statutes.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:Legislation+;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Code|
 
 ## Properties

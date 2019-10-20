@@ -11,7 +11,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A document accompanying a legal case.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Legal Case Document|
 
 ## Properties

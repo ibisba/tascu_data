@@ -43,7 +43,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A document (noun) is a bounded physical representation of body of information designed with the capacity (and usually intent) to communicate. A document may manifest symbolic, diagrammatic or sensory-representational information.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Document|
 
 ## Properties

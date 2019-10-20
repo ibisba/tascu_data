@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A written communication addressed to a person or organization and transmitted electronically.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|EMail|
 
 ## Properties

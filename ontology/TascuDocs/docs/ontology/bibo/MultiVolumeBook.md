@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A loose, thematic, collection of Documents, often Books.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:Book*;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Multivolume Book|
 
 ## Properties

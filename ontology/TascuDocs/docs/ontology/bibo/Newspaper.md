@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A periodical of documents, usually issued daily or weekly, containing current news, editorials, feature articles, and usually advertising.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:Issue+;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Newspaper|
 
 ## Properties

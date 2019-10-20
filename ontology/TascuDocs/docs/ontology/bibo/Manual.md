@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A small reference book, especially one giving instructions.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Manual|
 
 ## Properties

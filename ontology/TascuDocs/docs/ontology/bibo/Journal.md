@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A periodical of scholarly journal Articles.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:Issue+;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Journal|
 
 ## Properties

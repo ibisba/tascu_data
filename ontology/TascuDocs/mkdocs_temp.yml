@@ -1,6 +1,5 @@
 - 'Ontology classes':
-  - 'tascu:Step': 'Step.md'
-  - 'tascu:Service': 'Service.md'
+  - 'Service': 'ontology/Service.md'
   - 'bibo:Literature':
     - '': 'ontology/bibo/Literature.md'
     - 'bibo:Collection':
@@ -69,6 +68,7 @@
   - 'foaf:Agent':
     - '': 'foaf/0.1/Agent.md'
     - 'foaf:Organization': 'foaf/0.1/Organization.md'
+  - 'Step': 'ontology/Step.md'
 - 'EnumeratedValues':
   - 'bibo:DocumentStatus':
     - '': 'ontology/bibo/DocumentStatus.md'
@@ -82,17 +82,19 @@
     - '<http://purl.org/ontology/bibo/status/draft>': 'ontology/bibo/status/draft.md'
     - '<http://purl.org/ontology/bibo/status/rejected>': 'ontology/bibo/status/rejected.md'
 - 'Properties':
-  - 'comment': '0.1/comment.md'
   - 'foaf:name': 'foaf/0.1/name.md'
   - 'bibo:edition': 'ontology/bibo/edition.md'
   - 'bibo:status': 'ontology/bibo/status.md'
   - 'rdf:value': '1999/02/22-rdf-syntax-ns/value.md'
+  - 'id': 'ontology/id.md'
   - 'bibo:content': 'ontology/bibo/content.md'
+  - 'protocol': 'ontology/protocol.md'
   - 'dc:description': 'dc/terms/description.md'
   - 'dc:isPartOf':
     - '': 'dc/terms/isPartOf.md'
     - 'bibo:reproducedIn': 'ontology/bibo/reproducedIn.md'
   - 'bibo:numPages': 'ontology/bibo/numPages.md'
+  - 'comment': 'ontology/comment.md'
   - 'dc:subject': 'dc/terms/subject.md'
   - 'bibo:producer': 'ontology/bibo/producer.md'
   - 'bibo:court': 'ontology/bibo/court.md'
@@ -132,29 +134,27 @@
     - 'bibo:sici': 'ontology/bibo/sici.md'
     - 'bibo:oclcnum': 'ontology/bibo/oclcnum.md'
     - 'bibo:lccn': 'ontology/bibo/lccn.md'
-  - 'id': '0.1/id.md'
+  - 'description': 'ontology/description.md'
   - 'bibo:shortDescription': 'ontology/bibo/shortDescription.md'
   - 'dc:isVersionOf':
     - '': 'dc/terms/isVersionOf.md'
     - 'bibo:translationOf': 'ontology/bibo/translationOf.md'
-  - 'successRate': '0.1/successRate.md'
   - 'foaf:homepage': 'foaf/0.1/homepage.md'
   - 'foaf:phone': 'foaf/0.1/phone.md'
   - 'bibo:numVolumes': 'ontology/bibo/numVolumes.md'
+  - 'duration': 'ontology/duration.md'
   - 'dc:date':
     - '': 'dc/terms/date.md'
     - 'dc:issued': 'dc/terms/issued.md'
     - 'dc:created': 'dc/terms/created.md'
   - 'dc:abstract': 'dc/terms/abstract.md'
-  - 'duration': '0.1/duration.md'
-  - 'name': '0.1/name.md'
   - 'dc:isReferencedBy':
     - '': 'dc/terms/isReferencedBy.md'
     - 'bibo:subsequentLegalDecision':
       - '': 'ontology/bibo/subsequentLegalDecision.md'
       - 'bibo:reversedBy': 'ontology/bibo/reversedBy.md'
       - 'bibo:affirmedBy': 'ontology/bibo/affirmedBy.md'
-  - 'service': '0.1/service.md'
+  - 'service': 'ontology/service.md'
   - 'dc:dateSubmitted': 'dc/terms/dateSubmitted.md'
   - 'bibo:argued': 'ontology/bibo/argued.md'
   - 'foaf:mbox': 'foaf/0.1/mbox.md'
@@ -168,15 +168,15 @@
     - 'bibo:pageEnd': 'ontology/bibo/pageEnd.md'
     - 'bibo:volume': 'ontology/bibo/volume.md'
     - 'bibo:section': 'ontology/bibo/section.md'
+  - 'successRate': 'ontology/successRate.md'
   - 'bibo:recipient': 'ontology/bibo/recipient.md'
   - 'bibo:hasPart': 'ontology/bibo/hasPart.md'
-  - 'description': '0.1/description.md'
   - 'bibo:owner': 'ontology/bibo/owner.md'
   - 'dc:language': 'dc/terms/language.md'
-  - 'parent': '0.1/parent.md'
+  - 'parent': 'ontology/parent.md'
+  - 'name': 'ontology/name.md'
   - 'bibo:shortTitle': 'ontology/bibo/shortTitle.md'
   - 'bibo:number': 'ontology/bibo/number.md'
-  - 'protocol': '0.1/protocol.md'
   - 'dc:contributor':
     - '': 'dc/terms/contributor.md'
     - 'bibo:director': 'ontology/bibo/director.md'

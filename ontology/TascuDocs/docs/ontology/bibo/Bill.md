@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|Draft legislation presented for discussion to a legal body.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Bill|
 
 ## Properties

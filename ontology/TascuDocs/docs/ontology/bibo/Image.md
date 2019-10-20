@@ -9,7 +9,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A document that presents visual or diagrammatic information.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Image|
 
 ## Properties

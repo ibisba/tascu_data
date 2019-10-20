@@ -12,7 +12,7 @@
 |-----|-----|
 |rdfs:comment|A legal document; for example, a court decision, a brief, and so forth.|
 |empusa:propertyDefinitions|bibo:court @foaf:Organization;<br>bibo:argued xsd:date;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Legal Document|
 
 ## Properties

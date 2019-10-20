@@ -28,23 +28,23 @@
 
 ## Range
 
-[bibo:Literature](/ontology/bibo/Literature)
-
-[bibo:Legislation](/ontology/bibo/Legislation)
-
 [bibo:Webpage](/ontology/bibo/Webpage)
-
-[bibo:Issue](/ontology/bibo/Issue)
-
-[bibo:LegalDocument](/ontology/bibo/LegalDocument)
-
-[bibo:Document](/ontology/bibo/Document)
-
-[bibo:Slide](/ontology/bibo/Slide)
 
 [bibo:Book](/ontology/bibo/Book)
 
+[bibo:Issue](/ontology/bibo/Issue)
+
+[bibo:Document](/ontology/bibo/Document)
+
+[bibo:Literature](/ontology/bibo/Literature)
+
+[bibo:Slide](/ontology/bibo/Slide)
+
 [bibo:Article](/ontology/bibo/Article)
+
+[bibo:LegalDocument](/ontology/bibo/LegalDocument)
+
+[bibo:Legislation](/ontology/bibo/Legislation)
 
 ## Annotations
 

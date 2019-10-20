@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|An excerpted collection of words.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Quote|
 
 ## Properties

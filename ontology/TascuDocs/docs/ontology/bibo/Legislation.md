@@ -11,7 +11,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A legal document proposing or enacting a law or a group of laws.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Legislation|
 
 ## Properties

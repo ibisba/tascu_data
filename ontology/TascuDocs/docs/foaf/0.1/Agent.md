@@ -9,7 +9,7 @@
 |||
 |-----|-----|
 |empusa:propertyDefinitions|#* A human readable (user) name of the agent<br>foaf:name xsd:String;|
-|subDomain|DocumentWiseProv|
+|<http://gbol.life/0.1/subDomain>|DocumentWiseProv|
 |skos:scopeNote|Used to describe any \"agent\" related to bibliographic items. Such agents can be persons, organizations or groups of any kind.|
 
 ## Properties

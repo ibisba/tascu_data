@@ -10,6 +10,8 @@ definition: Identifier for this step<br>
 
 ## Range
 
+xsd:integer
+
 xsd:string
 
 ## Annotations

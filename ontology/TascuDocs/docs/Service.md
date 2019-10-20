@@ -1,15 +1,14 @@
-# tascu:Service a owl:Class
+# service a ObjectProperty
 
-## Subclasses
+## Domain
+
+definition: Can be part of a specific service<br>
+[Step](/Step)
+
+## Range
+
+[Service](/Service)
 
 ## Annotations
 
-|||
-|-----|-----|
-|empusa:propertyDefinitions|#* Identifier for this step<br>id xsd:String;<br>#* Service description;|
 
-## Properties
-
-|property|description|cardinality|type|
-|-----|-----|-----|-----|
-|[id](/0.1/id)|Identifier for this step|1:1|xsd:string|

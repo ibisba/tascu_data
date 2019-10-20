@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A document that presents authoritative reference information, such as a dictionary or encyclopedia .|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Reference Source|
 
 ## Properties

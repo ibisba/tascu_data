@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A document containing an authoritative determination (as a decree or judgment) made after consideration of facts or law.|
 |empusa:propertyDefinitions|bibo:affirmedBy @bibo:LegalDecision?;<br>bibo:subsequentLegalDecision @bibo:LegalDecision?;<br>bibo:reversedBy @bibo:LegalDecision?;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Decision|
 
 ## Properties

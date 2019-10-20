@@ -5,7 +5,7 @@
 |||
 |-----|-----|
 |rdfs:comment|The status of the publication of a document.|
-|subDomain|DocumentCore|
+|<http://gbol.life/0.1/subDomain>|DocumentCore|
 |rdfs:label|Document Status|
 
 ## skos:member

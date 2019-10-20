@@ -10,7 +10,7 @@
 |-----|-----|
 |rdfs:comment|A section of a book.|
 |empusa:propertyDefinitions|bibo:chapter xsd:String?;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Book Section|
 
 ## Properties

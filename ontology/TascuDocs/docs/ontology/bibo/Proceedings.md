@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A compilation of documents published from an event, such as a conference.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Proceedings|
 
 ## Properties

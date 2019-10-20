@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A graphical depiction of geographic features.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Map|
 
 ## Properties

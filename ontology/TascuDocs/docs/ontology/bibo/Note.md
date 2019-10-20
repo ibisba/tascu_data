@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|Notes or annotations about a resource.|
 |empusa:propertyDefinitions|bibo:annotates IRI*;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Note|
 
 ## Properties

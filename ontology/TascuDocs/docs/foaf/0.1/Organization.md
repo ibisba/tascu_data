@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |empusa:propertyDefinitions|#* The legal name of the organization<br>rov:legalName xsd:String?;<br>#* Homepage of the organization<br>foaf:homepage xsd:String?;<br>#* Link to logo of organization<br>foaf:logo IRI?;<br>#* mail address use  URI scheme (see RFC 2368). <br>foaf:mbox IRI?;<br>#* The phone number of the organization<br>foaf:phone xsd:String?;<br>#* Location to which the organization is based near<br>foaf:based_near xsd:String?;|
-|subDomain|DocumentWiseProv|
+|<http://gbol.life/0.1/subDomain>|DocumentWiseProv|
 
 ## Properties
 

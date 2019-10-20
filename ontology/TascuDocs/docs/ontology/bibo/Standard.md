@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A document describing a standard|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Standard|
 
 ## Properties

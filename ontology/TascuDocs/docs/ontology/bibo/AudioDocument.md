@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|An audio document; aka record.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|audio document|
 
 ## Properties

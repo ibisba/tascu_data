@@ -10,7 +10,7 @@
 |-----|-----|
 |rdfs:comment|An audio-visual document; film, video, and so forth.|
 |empusa:propertyDefinitions|bibo:director @foaf:Agent*;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|audio-visual document|
 
 ## Properties

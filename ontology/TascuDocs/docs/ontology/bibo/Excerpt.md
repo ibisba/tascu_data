@@ -9,7 +9,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A passage selected from a larger work.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Excerpt|
 
 ## Properties

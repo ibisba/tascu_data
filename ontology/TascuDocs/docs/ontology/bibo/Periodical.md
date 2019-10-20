@@ -17,7 +17,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A group of related documents issued at regular intervals.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Periodical|
 |skos:editorialNote|Error in original BIBO ontology LegalDocument is not an Issue; so removed bibo:hasPart @bibo:Issue+;|
 

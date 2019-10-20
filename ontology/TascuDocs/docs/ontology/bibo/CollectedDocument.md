@@ -12,7 +12,7 @@
 |-----|-----|
 |rdfs:comment|A document that simultaneously contains other documents.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:Document+;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Collected Document|
 
 ## Properties

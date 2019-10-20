@@ -9,7 +9,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A written or printed work of fiction or nonfiction, usually on sheets of paper fastened or bound together within covers.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Book|
 
 ## Properties

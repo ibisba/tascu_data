@@ -12,7 +12,7 @@
 |-----|-----|
 |rdfs:comment|A personal communication manifested in some document.|
 |empusa:propertyDefinitions|bibo:recipient @foaf:Agent*;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Personal Communication Document|
 
 ## Properties

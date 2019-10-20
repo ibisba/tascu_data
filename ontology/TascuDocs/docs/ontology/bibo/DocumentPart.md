@@ -13,7 +13,7 @@
 |||
 |-----|-----|
 |rdfs:comment|a distinct part of a larger document or collected document.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|document part|
 
 ## Properties

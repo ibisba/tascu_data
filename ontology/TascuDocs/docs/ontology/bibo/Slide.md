@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A slide in a slideshow|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Slide|
 
 ## Properties

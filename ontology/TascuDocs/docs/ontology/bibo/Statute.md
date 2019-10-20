@@ -7,7 +7,7 @@
 |||
 |-----|-----|
 |rdfs:comment|A bill enacted into law.|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Statute|
 
 ## Properties

@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A group of Webpages accessible on the Web.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:Webpage+;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Website|
 
 ## Properties

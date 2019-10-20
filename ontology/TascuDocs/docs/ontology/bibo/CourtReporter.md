@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A collection of legal cases.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:LegalDocument+;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Court Reporter|
 
 ## Properties

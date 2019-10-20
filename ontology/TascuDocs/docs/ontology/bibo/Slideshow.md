@@ -8,7 +8,7 @@
 |-----|-----|
 |rdfs:comment|A presentation of a series of slides, usually presented in front of an audience with written text and images.|
 |empusa:propertyDefinitions|bibo:hasPart @bibo:Slide*;|
-|subDomain|BIBO|
+|<http://gbol.life/0.1/subDomain>|BIBO|
 |rdfs:label|Slideshow|
 
 ## Properties
