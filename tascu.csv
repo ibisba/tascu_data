@@ -105,10 +105,10 @@ VTT has a SOP",NULL,2018-11-14T14:13:12Z,NULL
 63,61,2,***** MAGE: genome engineering #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 313,301,8,**** Select vectors/plasmids/DNA constructs,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 64,301,9,**** Select vector assembly strategy,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
-65,64,1,"***** SEVA/METABRICK, Moclo, Gibson pathway engineering @Wageningen",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
-66,65,1,****** #TODO add the list of tasks needed #ToBeReviewed,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
-67,64,2,"***** Vector, promoter selection, plasmids, locus of integration, restriction sites, etc (cloning strategy) #SopNeeded",NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
-68,64,3,***** Combinatorial assembly strategy #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+65,64,1,"***** SEVA/METABRICK, Moclo, Gibson pathway engineering @Wageningen",NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-10-11 11:23:41
+67,64,2,"***** Vector, promoter selection, plasmids, locus of integration, restriction sites, etc (cloning strategy) #SopNeeded",NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-10-11 11:23:41
+400,67,1,****** Select primers for vector assembly,Primers required for construction of the vector,NA,https://hub.ibisba.eu/sops/58,NULL,NA,NA,NULL,2019-10-11T11:21:56Z,2019-10-11 11:26:03
+68,64,3,***** Combinatorial assembly strategy #SopNeeded,NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-10-11 11:23:41
 314,301,10,**** List DNA fragments to order,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 69,301,11,**** Describe genetic constructs in SBOL format,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 70,69,1,***** Deposit to a database that we are to create #ToBeReviewed,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
@@ -144,17 +144,17 @@ VTT has a SOP",NULL,2018-11-14T14:13:12Z,NULL
 92,95,1,**** Order/synthesize genetic material,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 93,92,1,***** Receive genetic material,NULL,NULL,NULL,NULL,NULL,#SopNeeded for genetic storage,NULL,2018-11-14T14:13:12Z,NULL
 381,93,1,****** Prepare genetic material for transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-15T10:01:50Z,NULL
-383,93,2,****** Prepare liquid cultivation medium for transformation,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:05:04Z,2019-06-14 13:08:05
-387,93,3,****** Prepare solid cultivation medium for transformation,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:45:31Z,2019-06-14 13:09:22
+383,93,2,****** Prepare liquid cultivation medium for transformation,NA,NA,https://hub.ibisba.eu/sops/56,NULL,NA,NA,NULL,2019-04-15T10:05:04Z,2019-10-11 11:28:03
+387,93,3,****** Prepare solid cultivation medium for transformation,NA,NA,https://hub.ibisba.eu/sops/55,NULL,NA,NA,NULL,2019-04-15T10:45:31Z,2019-10-11 11:32:47
 384,93,4,****** Prepare cultivation media for making glycerol stocks,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:06:05Z,2019-06-14 13:09:22
 385,93,5,****** Transform genetic material into cloning host organism,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:07:01Z,2019-06-14 13:08:05
-386,93,6,****** Make glycerol stock,NA,NA,NA,NULL,NA,NA,NULL,2019-04-15T10:09:14Z,2019-06-14 13:08:05
+386,93,6,****** Make glycerol stock,NA,NA,https://hub.ibisba.eu/sops/54,NULL,NA,NA,NULL,2019-04-15T10:09:14Z,2019-10-11 11:35:20
 94,92,2,***** Verify genetic material by DNA sequence,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 96,95,2,**** Withdraw genetic material from storage,NA,Escherichia coli,https://hub.ibisba.eu/sops/59?version=1,NULL,NA,#SopNeeded for withdrawal,NULL,2018-11-14T14:13:12Z,2019-06-20 11:22:13
 98,95,3,**** Assembly of DNA parts,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
-349,98,1,***** In vitro assembly of the DNA construct,NA,NULL,https://drive.google.com/open?id=1zPZF2czFpIIf8-Z2ntBj1nXWQtfg6FgY,NULL,NULL,NA,NULL,2019-03-25T08:50:54Z,2019-03-28 15:17:24
+349,98,1,***** In vitro assembly of the DNA construct,NA,NA,https://hub.ibisba.eu/sops/52,NULL,NA,NA,NULL,2019-03-25T08:50:54Z,2019-10-11 11:41:13
 350,98,2,***** Transformation of the DNA construct into the cloning host organism,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:51:34Z,NULL
-366,350,2,****** Prepare cultivation media for transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:44:52Z,NULL
+366,350,2,****** Prepare cultivation media for transformation,NA,NA,https://hub.ibisba.eu/sops/56,NULL,NA,NA,NULL,2019-04-10T07:44:52Z,2019-10-11 11:30:51
 367,350,3,****** Prepare cultivation media after colony picking,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:45:25Z,NULL
 369,350,4,****** Transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:46:56Z,2019-04-10 07:47:28
 356,350,5,****** Colony picking for verification of DNA constructs,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-01T11:30:40Z,2019-04-10 07:47:28
@@ -165,10 +165,10 @@ VTT has a SOP",NULL,2018-11-14T14:13:12Z,NULL
 365,99,6,***** Recombinant clone screening,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:41:13Z,NULL
 345,95,6,**** Storage of the DNA construct,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:33:03Z,NULL
 346,345,1,***** Cryostock preparation for the cloning host carrying the DNA construct,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:36:20Z,NULL
-347,346,1,****** Make glycerol stock #SopNeeded,NA,NULL,https://drive.google.com/open?id=1y80SYGUnF9VDrgF09_izEyBXnyFljOuAI7SUn1FV1Is,NULL,NULL,NA,NULL,2019-03-25T08:48:21Z,2019-03-28 11:09:00
-348,346,2,****** Add label/barcode #SopNeeded,NA,NULL,NA,NULL,NULL,NA,NULL,2019-03-25T08:48:35Z,2019-03-25 08:49:12
+347,346,1,****** Make glycerol stock,NA,NA,"https://hub.ibisba.eu/sops/54, https://hub.ibisba.eu/sops/53",NULL,NA,NA,NULL,2019-03-25T08:48:21Z,2019-10-11 13:05:31
+348,346,2,****** Add label/barcode,NA,NA,NA,NULL,NA,NA,NULL,2019-03-25T08:48:35Z,2019-10-11 13:05:45
 351,91,2,*** Creation of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-01T11:07:37Z,2019-04-01 11:15:53
-361,351,1,**** In vitro assembly of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-03T14:13:36Z,2019-04-03 14:15:16
+361,351,1,**** In vitro assembly of the integration/expression vector,NA,NA,https://hub.ibisba.eu/sops/57,NULL,NA,NA,NULL,2019-04-03T14:13:36Z,2019-10-11 11:41:31
 362,351,2,**** Transformation of the integration/expression vector into the cloning host organism,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-03T14:14:20Z,2019-04-03 14:15:16
 370,362,1,***** Prepare cultivation media for transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:50:29Z,NULL
 371,362,2,***** Prepare cultivation media after colony picking,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:50:45Z,NULL
@@ -181,13 +181,13 @@ VTT has a SOP",NULL,2018-11-14T14:13:12Z,NULL
 377,343,3,***** Recombinant clone screening,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:55:33Z,NULL
 378,351,4,**** Storage of the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:57:59Z,NULL
 380,378,1,***** Cryostock preparation for the cloning host carrying the integration/expression vector,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:58:55Z,2019-04-10 07:59:18
-379,380,1,****** Make glycerol stock,NA,NULL,NA,NULL,NULL,NA,NULL,2019-04-10T07:58:22Z,2019-04-10 07:59:18
+379,380,1,****** Make glycerol stock,NA,NA,"https://hub.ibisba.eu/sops/54, https://hub.ibisba.eu/sops/53",NULL,NA,NA,NULL,2019-04-10T07:58:22Z,2019-10-11 11:37:35
 100,91,3,*** Transformation,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-04-01 11:15:53
 101,100,1,**** Non-HT transformation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 102,101,1,***** Prepare cultivation media for transformation step,NULL,NULL,NULL,NULL,NULL,#SopNeeded for preparing solid culture media,NULL,2018-11-14T14:13:12Z,NULL
 103,101,2,***** Prepare cultivation media for cultivation after colony picking,NULL,NULL,NULL,NULL,NULL,#SopNeeded for preparing liquid culture media,NULL,2018-11-14T14:13:12Z,NULL
 104,101,3,***** Withdraw background strain from storage,NULL,NULL,NULL,NULL,NULL,#SopNeeded for withdrawal of strains,NULL,2018-11-14T14:13:12Z,NULL
-105,101,4,***** Prepare genetic material for transformation,NA,NULL,https://drive.google.com/open?id=1SwFf5E5D0nY5IGD8epUa7Vkc-9x1z3Oe,NULL,NULL,#SopNeeded for use of restriction enzymes,NULL,2018-11-14T14:13:12Z,2019-03-28 14:24:26
+105,101,4,***** Prepare genetic material for transformation,NA,NA,https://hub.ibisba.eu/sops/51,NULL,NA,#SopNeeded for use of restriction enzymes,NULL,2018-11-14T14:13:12Z,2019-10-11 11:38:22
 106,101,5,***** Transformation #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 107,101,6,***** Colony picking,NULL,NULL,NULL,NULL,NULL,#CriteriaNeeded,NULL,2018-11-14T14:13:12Z,NULL
 108,100,2,**** HT- transformation,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
@@ -204,10 +204,10 @@ VTT has a SOP",NULL,2018-11-14T14:13:12Z,NULL
 119,116,3,**** Verify integration loci,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 120,116,4,**** Verify insertion completeness,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 121,116,5,**** Check how many independent clones are needed,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
-122,116,6,**** Recombinant clone screening and selection (depends on transformation implementation) #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
+122,116,6,**** Recombinant clone screening and selection (depends on transformation implementation),NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-10-11 13:07:27
 123,91,5,*** Storage of clones,NA,NULL,NA,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-04-01 11:11:28
 124,123,1,**** Cryostock preparation (triplicates needed),NULL,NULL,NULL,NULL,NULL,#SopNeeded for cryostock preparation and labeling/barcoding,NULL,2018-11-14T14:13:12Z,NULL
-125,124,1,***** Make glycerol stock #SopNeeded,NA,NULL,https://drive.google.com/open?id=1pK3pXq2jPZ2fWxcDbK1wWvWpG6NWo7La,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,2019-03-28 11:07:14
+125,124,1,***** Make glycerol stock #SopNeeded,NA,NA,"https://hub.ibisba.eu/sops/54, https://hub.ibisba.eu/sops/53",NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-10-11 11:39:11
 126,124,2,***** Add label/barcode #SopNeeded,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
 127,88,4,** Criteria for successful execution of Build  (Criteria to be available as check list table),NA,NA,NA,NULL,NA,NA,NULL,2018-11-14T14:13:12Z,2019-06-05 22:09:30
 128,127,1,*** Correct parts assembly.,NULL,NULL,NULL,NULL,NULL,NA,NULL,2018-11-14T14:13:12Z,NULL
