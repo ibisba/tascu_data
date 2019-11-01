@@ -1,0 +1,11 @@
+# Cocos_Islands a skos:Concept, [Country](/0.1/Country)
+
+## Subclasses
+
+## Annotations
+
+|||
+|-----|-----|
+|ddbjLabel|Cocos Islands|
+|rdfs:label|Cocos Islands|
+

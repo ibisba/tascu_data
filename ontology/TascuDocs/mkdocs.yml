@@ -1,0 +1,216 @@
+# Project information
+site_name: 'TASCU'
+site_description: 'TasCU; Ontology for IBISBA Projects'
+site_author: 'Jesse van Dam & Jasper Koehorst'
+site_url: http://example.com
+theme: 'material'
+
+nav:
+- 'Ontology classes':
+  - 'tascu:Step': 'Step.md'
+  - 'tascu:Service': 'Service.md'
+  - 'bibo:Literature':
+    - '': 'ontology/bibo/Literature.md'
+    - 'bibo:Collection':
+      - '': 'ontology/bibo/Collection.md'
+      - 'bibo:Website': 'ontology/bibo/Website.md'
+      - 'bibo:Series': 'ontology/bibo/Series.md'
+      - 'bibo:MultiVolumeBook': 'ontology/bibo/MultiVolumeBook.md'
+      - 'bibo:Periodical':
+        - '': 'ontology/bibo/Periodical.md'
+        - 'bibo:CourtReporter': 'ontology/bibo/CourtReporter.md'
+        - 'bibo:Magazine': 'ontology/bibo/Magazine.md'
+        - 'bibo:Newspaper': 'ontology/bibo/Newspaper.md'
+        - 'bibo:Code': 'ontology/bibo/Code.md'
+        - 'bibo:Journal': 'ontology/bibo/Journal.md'
+    - 'bibo:Document':
+      - '': 'ontology/bibo/Document.md'
+      - 'bibo:AudioVisualDocument':
+        - '': 'ontology/bibo/AudioVisualDocument.md'
+        - 'bibo:Film': 'ontology/bibo/Film.md'
+      - 'bibo:Image':
+        - '': 'ontology/bibo/Image.md'
+        - 'bibo:Map': 'ontology/bibo/Map.md'
+      - 'bibo:Article':
+        - '': 'ontology/bibo/Article.md'
+        - 'bibo:AcademicArticle': 'ontology/bibo/AcademicArticle.md'
+      - 'bibo:Report': 'ontology/bibo/Report.md'
+      - 'bibo:CollectedDocument':
+        - '': 'ontology/bibo/CollectedDocument.md'
+        - 'bibo:Issue': 'ontology/bibo/Issue.md'
+        - 'bibo:EditedBook': 'ontology/bibo/EditedBook.md'
+      - 'bibo:Slideshow': 'ontology/bibo/Slideshow.md'
+      - 'bibo:Note': 'ontology/bibo/Note.md'
+      - 'bibo:Standard': 'ontology/bibo/Standard.md'
+      - 'bibo:AudioDocument': 'ontology/bibo/AudioDocument.md'
+      - 'bibo:Book':
+        - '': 'ontology/bibo/Book.md'
+        - 'bibo:Proceedings': 'ontology/bibo/Proceedings.md'
+      - 'bibo:DocumentPart':
+        - '': 'ontology/bibo/DocumentPart.md'
+        - 'bibo:Slide': 'ontology/bibo/Slide.md'
+        - 'bibo:BookSection':
+          - '': 'ontology/bibo/BookSection.md'
+          - 'bibo:Chapter': 'ontology/bibo/Chapter.md'
+        - 'bibo:Excerpt':
+          - '': 'ontology/bibo/Excerpt.md'
+          - 'bibo:Quote': 'ontology/bibo/Quote.md'
+      - 'bibo:LegalDocument':
+        - '': 'ontology/bibo/LegalDocument.md'
+        - 'bibo:LegalCaseDocument':
+          - '': 'ontology/bibo/LegalCaseDocument.md'
+          - 'bibo:Brief': 'ontology/bibo/Brief.md'
+          - 'bibo:LegalDecision': 'ontology/bibo/LegalDecision.md'
+        - 'bibo:Legislation':
+          - '': 'ontology/bibo/Legislation.md'
+          - 'bibo:Statute': 'ontology/bibo/Statute.md'
+          - 'bibo:Bill': 'ontology/bibo/Bill.md'
+      - 'bibo:Webpage': 'ontology/bibo/Webpage.md'
+      - 'bibo:Manual': 'ontology/bibo/Manual.md'
+      - 'bibo:PersonalCommunicationDocument':
+        - '': 'ontology/bibo/PersonalCommunicationDocument.md'
+        - 'bibo:Letter': 'ontology/bibo/Letter.md'
+        - 'bibo:Email': 'ontology/bibo/Email.md'
+      - 'bibo:Manuscript': 'ontology/bibo/Manuscript.md'
+      - 'bibo:Patent': 'ontology/bibo/Patent.md'
+      - 'bibo:ReferenceSource': 'ontology/bibo/ReferenceSource.md'
+  - 'foaf:Agent':
+    - '': 'foaf/0.1/Agent.md'
+    - 'foaf:Organization': 'foaf/0.1/Organization.md'
+- 'EnumeratedValues':
+  - 'bibo:DocumentStatus':
+    - '': 'ontology/bibo/DocumentStatus.md'
+    - '<http://purl.org/ontology/bibo/status/unpublished>': 'ontology/bibo/status/unpublished.md'
+    - '<http://purl.org/ontology/bibo/status/peerReviewed>': 'ontology/bibo/status/peerReviewed.md'
+    - '<http://purl.org/ontology/bibo/status/nonPeerReviewed>': 'ontology/bibo/status/nonPeerReviewed.md'
+    - '<http://purl.org/ontology/bibo/status/published>': 'ontology/bibo/status/published.md'
+    - '<http://purl.org/ontology/bibo/status/forthcoming>': 'ontology/bibo/status/forthcoming.md'
+    - '<http://purl.org/ontology/bibo/status/accepted>': 'ontology/bibo/status/accepted.md'
+    - '<http://purl.org/ontology/bibo/status/legal>': 'ontology/bibo/status/legal.md'
+    - '<http://purl.org/ontology/bibo/status/draft>': 'ontology/bibo/status/draft.md'
+    - '<http://purl.org/ontology/bibo/status/rejected>': 'ontology/bibo/status/rejected.md'
+- 'Properties':
+  - 'comment': '0.1/comment.md'
+  - 'foaf:name': 'foaf/0.1/name.md'
+  - 'bibo:edition': 'ontology/bibo/edition.md'
+  - 'bibo:status': 'ontology/bibo/status.md'
+  - 'rdf:value': '1999/02/22-rdf-syntax-ns/value.md'
+  - 'bibo:content': 'ontology/bibo/content.md'
+  - 'dc:description': 'dc/terms/description.md'
+  - 'dc:isPartOf':
+    - '': 'dc/terms/isPartOf.md'
+    - 'bibo:reproducedIn': 'ontology/bibo/reproducedIn.md'
+  - 'bibo:numPages': 'ontology/bibo/numPages.md'
+  - 'dc:subject': 'dc/terms/subject.md'
+  - 'bibo:producer': 'ontology/bibo/producer.md'
+  - 'bibo:court': 'ontology/bibo/court.md'
+  - 'rov:legalName': 'ns/regorg/legalName.md'
+  - 'bibo:distributor': 'ontology/bibo/distributor.md'
+  - 'dc:relation':
+    - '': 'dc/terms/relation.md'
+    - 'bibo:reviewOf': 'ontology/bibo/reviewOf.md'
+    - 'bibo:annotates': 'ontology/bibo/annotates.md'
+    - 'bibo:transcriptOf': 'ontology/bibo/transcriptOf.md'
+  - 'dc:publisher':
+    - '': 'dc/terms/publisher.md'
+    - 'bibo:issuer': 'ontology/bibo/issuer.md'
+  - 'bibo:contributorList':
+    - '': 'ontology/bibo/contributorList.md'
+    - 'bibo:authorList': 'ontology/bibo/authorList.md'
+    - 'bibo:editorList': 'ontology/bibo/editorList.md'
+  - 'foaf:based_near': 'foaf/0.1/based_near.md'
+  - 'bibo:citedBy': 'ontology/bibo/citedBy.md'
+  - 'bibo:identifier':
+    - '': 'ontology/bibo/identifier.md'
+    - 'bibo:gtin14': 'ontology/bibo/gtin14.md'
+    - 'bibo:issn': 'ontology/bibo/issn.md'
+    - 'bibo:handle': 'ontology/bibo/handle.md'
+    - 'bibo:uri': 'ontology/bibo/uri.md'
+    - 'bibo:eissn': 'ontology/bibo/eissn.md'
+    - 'bibo:coden': 'ontology/bibo/coden.md'
+    - 'bibo:doi': 'ontology/bibo/doi.md'
+    - 'bibo:isbn':
+      - '': 'ontology/bibo/isbn.md'
+      - 'bibo:isbn10': 'ontology/bibo/isbn10.md'
+      - 'bibo:isbn13': 'ontology/bibo/isbn13.md'
+    - 'bibo:pmid': 'ontology/bibo/pmid.md'
+    - 'bibo:asin': 'ontology/bibo/asin.md'
+    - 'bibo:upc': 'ontology/bibo/upc.md'
+    - 'bibo:eanucc13': 'ontology/bibo/eanucc13.md'
+    - 'bibo:sici': 'ontology/bibo/sici.md'
+    - 'bibo:oclcnum': 'ontology/bibo/oclcnum.md'
+    - 'bibo:lccn': 'ontology/bibo/lccn.md'
+  - 'id': '0.1/id.md'
+  - 'bibo:shortDescription': 'ontology/bibo/shortDescription.md'
+  - 'dc:isVersionOf':
+    - '': 'dc/terms/isVersionOf.md'
+    - 'bibo:translationOf': 'ontology/bibo/translationOf.md'
+  - 'successRate': '0.1/successRate.md'
+  - 'foaf:homepage': 'foaf/0.1/homepage.md'
+  - 'foaf:phone': 'foaf/0.1/phone.md'
+  - 'bibo:numVolumes': 'ontology/bibo/numVolumes.md'
+  - 'dc:date':
+    - '': 'dc/terms/date.md'
+    - 'dc:issued': 'dc/terms/issued.md'
+    - 'dc:created': 'dc/terms/created.md'
+  - 'dc:abstract': 'dc/terms/abstract.md'
+  - 'duration': '0.1/duration.md'
+  - 'name': '0.1/name.md'
+  - 'dc:isReferencedBy':
+    - '': 'dc/terms/isReferencedBy.md'
+    - 'bibo:subsequentLegalDecision':
+      - '': 'ontology/bibo/subsequentLegalDecision.md'
+      - 'bibo:reversedBy': 'ontology/bibo/reversedBy.md'
+      - 'bibo:affirmedBy': 'ontology/bibo/affirmedBy.md'
+  - 'service': '0.1/service.md'
+  - 'dc:dateSubmitted': 'dc/terms/dateSubmitted.md'
+  - 'bibo:argued': 'ontology/bibo/argued.md'
+  - 'foaf:mbox': 'foaf/0.1/mbox.md'
+  - 'foaf:logo': 'foaf/0.1/logo.md'
+  - 'bibo:locator':
+    - '': 'ontology/bibo/locator.md'
+    - 'bibo:pageStart': 'ontology/bibo/pageStart.md'
+    - 'bibo:chapter': 'ontology/bibo/chapter.md'
+    - 'bibo:pages': 'ontology/bibo/pages.md'
+    - 'bibo:issue': 'ontology/bibo/issue.md'
+    - 'bibo:pageEnd': 'ontology/bibo/pageEnd.md'
+    - 'bibo:volume': 'ontology/bibo/volume.md'
+    - 'bibo:section': 'ontology/bibo/section.md'
+  - 'bibo:recipient': 'ontology/bibo/recipient.md'
+  - 'bibo:hasPart': 'ontology/bibo/hasPart.md'
+  - 'description': '0.1/description.md'
+  - 'bibo:owner': 'ontology/bibo/owner.md'
+  - 'dc:language': 'dc/terms/language.md'
+  - 'parent': '0.1/parent.md'
+  - 'bibo:shortTitle': 'ontology/bibo/shortTitle.md'
+  - 'bibo:number': 'ontology/bibo/number.md'
+  - 'protocol': '0.1/protocol.md'
+  - 'dc:contributor':
+    - '': 'dc/terms/contributor.md'
+    - 'bibo:director': 'ontology/bibo/director.md'
+    - 'bibo:editor': 'ontology/bibo/editor.md'
+    - 'bibo:translator': 'ontology/bibo/translator.md'
+  - 'dc:references':
+    - '': 'dc/terms/references.md'
+    - 'bibo:cites': 'ontology/bibo/cites.md'
+  - 'dc:title': 'dc/terms/title.md'
+  - 'dc:dateAccepted': 'dc/terms/dateAccepted.md'
+  - 'dc:rights': 'dc/terms/rights.md'
+# site_favicon: 'images/favicon.ico'
+# extra:
+  # logo: 'images/logo.svg'
+
+google_analytics:
+  - 'UA-103564137-1'
+  - 'auto'
+
+# extra:
+  # disqus: 'your-disqus-shortname'
+
+extra:
+  logo: 'images/fair-semantics_logo.svg'
+  feature:
+    tabs: true
+  palette:
+    primary: 'light blue'
+    accent: 'red'

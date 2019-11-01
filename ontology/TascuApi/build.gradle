@@ -1,0 +1,69 @@
+buildscript {
+    repositories {
+        maven { url 'https://repo.gradle.org/gradle/libs-releases' }
+        jcenter()
+        maven { url "https://plugins.gradle.org/m2/" }
+        flatDir {
+            dirs 'libs'
+        }
+    }
+    dependencies {
+        // Jar
+        classpath 'com.github.jengelman.gradle.plugins:shadow:4.0.4'
+        // Auto increment version (enable when in git)
+        // classpath "gradle.plugin.com.zoltu.gradle.plugin:git-versioning:3.0.3"
+        classpath "org.gradle:gradle-tooling-api:3.4.1"
+    }
+}
+
+// Get the general dependency
+def f = new File('./libs/EmpusaCodeGen.jar')
+def dir = new File("./libs")
+dir.mkdir()
+new URL("http://download.systemsbiology.nl/empusa/RDFSimpleCon.jar").withInputStream{ i -> f.withOutputStream{ it << i }}
+
+
+apply plugin: 'maven'
+apply plugin: 'java-library'
+// Jar
+apply plugin: "com.github.johnrengelman.shadow"
+// Auto increment version (enable when in git)
+// apply plugin: "com.zoltu.git-versioning"
+
+repositories {
+    mavenCentral()
+    mavenLocal()
+    jcenter()
+}
+
+shadowJar {
+    baseName = 'mybasecom.02.API'
+    zip64 true
+    classifier = null
+    version = null
+    configurations = [project.configurations.runtimeClasspath]
+}
+
+
+jar {
+    manifest {
+        attributes 'Main-Class': 'none'
+    }
+}
+
+artifacts {
+    archives shadowJar
+}
+
+
+group = 'mybasecom.02.API'
+version = '0.0.1'
+description = """API for mybasecom.02.API"""
+
+dependencies {
+    compile fileTree(dir: 'libs', include: '*.jar')
+    implementation group: 'log4j', name: 'log4j', version: '1.2.17'
+    api group: 'org.apache.commons', name: 'commons-vfs2', version: '2.0'
+    api group: 'org.apache.commons', name: 'commons-lang3', version: '3.5'
+    testImplementation 'junit:junit:4.12'
+}
